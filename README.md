@@ -9,5 +9,5 @@ It is a collection of workshops to learn frontend topics. 🧑‍💻🎨
 3. Copy the folder [your folder name] and then replace by your github username.
 4. Push the new changes
   - `git commit -am "feat: Add new folder [your folder name]"`
-  - `git push -u feature/[github-username]`
+  - `git push -u origin feature/[github-username]`
 5. Happy code! 🤩
