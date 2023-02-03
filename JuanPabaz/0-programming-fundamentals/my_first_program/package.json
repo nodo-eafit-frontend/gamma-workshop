@@ -1,0 +1,12 @@
+{
+  "name": "my_first_program",
+  "version": "1.0.0",
+  "description": "practica de mi primer codigo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JuanPabaz",
+  "license": "ISC"
+}
