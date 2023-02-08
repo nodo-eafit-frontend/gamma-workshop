@@ -2,7 +2,7 @@ const news = [
     {
     id: '1',
     image: "../assets/imagenes/thelast.jfif",
-    tittle: 'El éxito de "The Last of Us" es tan avasallador que ni los intentos de review bombing del capítulo tres pueden con ella',
+    tittle: 'El éxito de "The Last of Us" es avasallador',
     description: `Estaba claro que el capítulo 3 de 'The Last of Us' iba a levantar ampollas entre los fans
     más suspicaces: su decisión de apartarse momentáneamente del viaje de Ellie y Joel y contar la historia
     de Bill y Frank, cambiando además lo que vimos en el juego, no iba a gustar. Primero, porque el destino 
@@ -12,7 +12,7 @@ const news = [
 {
     id: '2',
     image: "../assets/imagenes/toyota.png",
-    tittle: "El tiempo demostrará que nuestra posición es la correcta: Toyota tiene clarísimo su rechazo al coche eléctrico",
+    tittle: "Toyota tiene clarísimo su rechazo al coche eléctrico",
     description: `La apuesta es arriesgada y los resultados los empezaremos a conocer muy pronto.
      Toyota no cree en el coche eléctrico. Está segura de que el híbrido (enchufable o no) es una pieza clave
       no sólo en una transición al coche eléctrico, también en el futuro a largo plazo. La primera víctima de 

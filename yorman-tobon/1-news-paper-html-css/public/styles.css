@@ -28,8 +28,7 @@ html {
 header {
     position: relative;
     width: 100%;
-    min-width: 320px;
-    /*dimension mas chicha en los celulares*/
+    min-width: 320px; /*dimension mas chicha en los celulares*/
     height: 250px;
 }
 
@@ -86,7 +85,7 @@ main{
     width: 100%;
     min-width: 320px;/*Ancho minimo para celulares*/
     height: auto;
-    
+    display: flex;
 }
 
 .main-news-container {
@@ -97,10 +96,10 @@ main{
 
 .main-card{
     background-color: var(--warn-black);
-    width: 90%;
+    width: 320px;
     border-radius: 10px;
     padding: 5px;
-    margin: 0px 8px 10px 15px;
+    margin: auto;
     margin-top: 20px;
     box-shadow: 2px 2px 2px 2.2px var(--rojo-desvanecido);
 }
@@ -114,16 +113,45 @@ main{
 }
 
 .main-card img{
-    display: flex;
-    justify-content: center;
+    display: block;
     background-size: cover;
-    background-position: center;
     margin: auto;
-    padding: 5px;
+    
 }
 
 .main-card p{
     font-size: 1.4rem;
     text-align: center;font-weight: lighter;
     color: var(--soft-blue);
+}
+
+
+@media only screen and (max-width: 340px) {
+    main{
+        width: 100%;
+        max-width: 320px;/*Ancho minimo para celulares*/
+        height: auto;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 729px) {
+    
+    .main-news-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-card{
+        background-color: var(--warn-black);
+        width: 380px;
+        height: auto;
+        border-radius: 10px;
+        margin: 0px 15px 10px 15px;
+        padding: 5px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 2px 2.2px var(--rojo-desvanecido);
+    }
 }
