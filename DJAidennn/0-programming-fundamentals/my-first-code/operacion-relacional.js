@@ -18,7 +18,7 @@ let respuesta = 18 <= age
 console.log (respuesta)
 
 console.log ("================================================")
-let cedulareserva = 43342
+let cedulareserva = 43341
 console.log ("Esta es tu cedula?", cedulareserva)
 let c = 2233 === cedula;
 let respuesta2 = cedulareserva === cedula
