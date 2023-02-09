@@ -35,7 +35,11 @@ console.log("La Módulo de", num1, "%", num2)
 console.log(resultadoMódulo);
 
 ///////
-let numero = 55;
+let numero = 90;
 let esPar = numero % 2 === 0;
 console.log("este número es par", numero);
-console.log(esPar);
+console.log(esPar); 
+
+let esImpar = numero % 2 !== 0; 
+console.log("este número es Impar", numero);
+console.log(esImpar);
