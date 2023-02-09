@@ -4,7 +4,9 @@
   "description": "practica de mi primer codigo",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch index.js",
+    "start": "node --watch index.js", 
+    "start:or": "node --watch operacion-relacional.js", 
+    "start:oa": "node --watch operacion-aritmetica.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JohanitaM",
