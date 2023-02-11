@@ -7,6 +7,8 @@
     "start": "node --watch index.js", 
     "start:or": "node --watch operacion-relacional.js", 
     "start:oa": "node --watch operacion-aritmetica.js",
+    "start:bs": "node --watch block-scope.js",
+    "start:co": "node --watch conditionals.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JohanitaM",
