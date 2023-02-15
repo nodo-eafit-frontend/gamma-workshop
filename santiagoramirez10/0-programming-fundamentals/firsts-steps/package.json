@@ -1,0 +1,16 @@
+{
+  "name": "first-code",
+  "version": "1.0.0",
+  "description": "javascript examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "start:ao": "node --watch arithmetic-operations.js",
+    "start:ro": "node --watch relational-operations.js",
+    "start:bs": "node --watch block-scope.js",
+    "start:co": "node --watch conditionals.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santiago Ramírez Pérez",
+  "license": "ISC"
+}
