@@ -3,7 +3,7 @@ console.clear();
 /// Condicionales con if - else if - else
 
 // Yo
-let presupuesto = 25_000;
+let presupuesto = 20_000;
 
 // Tienda de transporte
 let medioDeTrasporte = 'Carro';
@@ -21,7 +21,7 @@ if (loCompro) {
   // Pedir prestamo de 10_000 que alcance para comprar el carro
   medioDeTrasporte = medioDeTrasporte + '     Prestamo! ' + (presupuesto + prestamoBanco);
 } else {
-  medioDeTrasporte = medioDeTrasporte + '     😥!';
+  medioDeTrasporte = medioDeTrasporte + '     🤓!';
 }
 
 console.log(medioDeTrasporte);
