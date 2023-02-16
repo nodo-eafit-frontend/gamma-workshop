@@ -1,15 +1,20 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Noticia Text", "Arial";
 }
 
 body {
     background-color: #E1E1DD;
+    margin-top: 20px;
 }
 
 hr {
     margin: 10px 0px;
+}
+
+.hr-margin-1 {
+    margin: auto 1%;
 }
 
 .container {
@@ -34,7 +39,7 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     text-transform: uppercase;
     color: #252525;
@@ -64,6 +69,10 @@ p {
     color: #252525;
 }
 
+.second-paragraph {
+    padding: 0px 20px;
+}
+
 span {
     text-transform: uppercase;
     font-weight: bold;
@@ -79,6 +88,7 @@ span {
 .div-header div {
     border: solid 1px #252525;
     width: 600px;
+    margin-top: 10px;
 }
 
 .div-name {
@@ -197,7 +207,6 @@ footer a:hover {
     h4 {
         font-size: 15px;
     }
-
 }
 
 @media (max-width: 950px) {
@@ -217,9 +226,13 @@ footer a:hover {
         padding: 0 !important;
     }
 
+    .div-major {
+        margin: 0% 1%;
+    }
+
     .div-side {
         width: 100%;
-        margin: 0%;
+        margin: 0% 1%;
     }
 }
 
