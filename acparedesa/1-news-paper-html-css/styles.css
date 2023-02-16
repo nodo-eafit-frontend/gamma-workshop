@@ -1,0 +1,51 @@
+@font-face {
+  font-family:"Babylonica-Regular" ;
+  src:
+  url("fonts/Babylonica-Regular.woff") format("woff"),
+  url("fonts/Babylonica-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+
+h1 {
+  text-shadow: 1px 1px 1px rgb(30, 12, 1), 2px 2px 1px rgb(5, 3, 1);
+  color:rgb(83, 32, 0); 
+}
+
+  h2 {
+    color: rgb(10, 10, 10); text-decoration: underline;
+  }
+
+  .container1 {
+    column-count:3;
+    
+
+  }
+
+  .container2 {
+    column-count:2;
+  }
+
+  body {
+    background-image: url("paper.jpg");
+    font-family: 'Babylonica', cursive;
+    font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+  }
+
+p {color: rgb(38, 20, 0);
+
+  
+  }
+  .rot{
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    height:20px;
+    width:25px;
+}
+
+   
+
