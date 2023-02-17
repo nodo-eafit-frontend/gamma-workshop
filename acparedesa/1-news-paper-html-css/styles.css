@@ -1,7 +1,24 @@
 
-h1 {
-  text-shadow: 1px 1px 1px rgb(30, 12, 1), 2px 2px 1px rgb(5, 3, 1);
-  color:rgb(83, 32, 0); 
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Zeyada&display=swap');
+@media(max-width: 750px){
+  .container1, .container2 {
+    display: flex;
+  }
+}
+
+header{
+  font-family: 'Babylonica', cursive;
+  font-size: 22px
+}
+
+#line1{
+  border-color: black;
+
+}
+
+main{ font-family: "Zeyada", cursive;
+  font-size: 18px
+
 }
 
   h2 {
@@ -18,12 +35,9 @@ h1 {
     column-count:2;
   }
 
-  body {
+ html {
     background-image: url("paper.jpg");
-    font-family: 'Babylonica', cursive;
-    font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-  }
+      }
 
 p {color: rgb(38, 20, 0);
 
@@ -37,9 +51,9 @@ p {color: rgb(38, 20, 0);
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    height:600px;
-    width:400px;
-}
+    height:580px;
+    width:400px;    
+   }
 
    
 
