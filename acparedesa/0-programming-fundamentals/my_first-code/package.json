@@ -1,0 +1,16 @@
+{
+  "name": "my_first-code",
+  "version": "1.0.0",
+  "description": "practica de mi primer codigo",
+  "main": "index.js",
+  "scripts": {
+    "start:or": "node --watch operacion-relacional.js", 
+    "start:oa": "node --watch operacion-aritmetica.js",
+    "start:bs": "node --watch block-scope.js",
+    "start:co": "node --watch conditionals1.js",
+
+ "test":"echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Astrid Paredes",
+  "license": "ISC"
+}
