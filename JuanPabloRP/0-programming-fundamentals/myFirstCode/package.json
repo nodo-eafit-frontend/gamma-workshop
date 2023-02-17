@@ -5,6 +5,7 @@
 	"main": "example1.js",
 	"scripts": {
 		"start": "node --watch index.js",
+		"start:UAP":"node --watch unArchivoPa.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "",
