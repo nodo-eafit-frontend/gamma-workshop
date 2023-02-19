@@ -1,0 +1,31 @@
+img {
+    width: 100px;
+}
+
+main {
+    display: flex;
+}
+
+div {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    border: 5px black solid;
+    padding: 10px;
+    margin: 15px;
+}
+
+main span:first-child {
+    background-color: rgb(42, 106, 165);
+}
+
+
+
+
+ /*Para seleccionar un elemento en html el orden del peso es:
+ -iline-style
+ -id
+ -class
+ -elemento
+ -pseudo-element
+ */
