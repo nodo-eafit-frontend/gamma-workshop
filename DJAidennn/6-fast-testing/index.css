@@ -1,4 +1,5 @@
-body {
-    background-color: aquamarine;
+a:first-child {
+    background-color: white;
     color: brown;
+    
   }
