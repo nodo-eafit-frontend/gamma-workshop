@@ -4,6 +4,14 @@
   - https://github.com/eduardofierropro/Reset-CSS
 */
 
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./assets/fonts/KaushanScript-Regular.otf') format('opentype');
+}
+
 *,
 *::before,
 *::after {
