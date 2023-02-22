@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <title>Test de reflejos</title>
-</head>
-<body>
-   <header>
-        <img src="assets/logo.png" alt="logotipo">
-        <h1>Test de velocidad</h1> 
-        <nav>
-            <a href="index.html" rel="noopener noreferrer">Inicio</a>
-            <a href="pages/stats/index.html"  rel="noopener noreferrer">Estadisticas</a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logotipo" />
+      <h1>Test de reflejos</h1>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./pages/stats/index.html">Estadísticas</a>
+      </nav>
     </header>
-    <main>
-        <article>
-            <h1>Datazo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eos labore repudiandae officiis impedit corrupti, dolorum a. Ipsam, corporis ipsa ut placeat quam fugit possimus doloremque sunt aut distinctio excepturi.</p>
-        </article>
-        <hr/>
-        <section>
-            <form action="">
-                <label for="jugador">jugador</label>
-                <input type="text">
-            </form>
-        </section>
-    </main>
+    <hr />
+    <main class="container">
+      <div>Casa</div>
+      <div class="container__casa">Casa 1</div>
+      <div>Bloque 3</div>
 
-   <footer>
-        <span>V1.0.0</span>
-   </footer>
-</body>
+      <section>
+        <div>Bloque 4</div>
+        <div class="container__casa container__casa--rojo">Casa 2</div>
+      </section>
+      <hr />
+      <span>Span 1</span>
+      <span>Span 2</span>
+      <span>Span 3</span>
+    </main>
+    <hr />
+    <footer>
+      <span>v1.0.0</span>
+    </footer>
+  </body>
 </html>
