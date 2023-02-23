@@ -4,27 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Magazine</title>
   </head>
   <body>
-    Mensaje
-    <a href="#">Soy un Anchor</a>
-    <div>Soy un Div</div>
-    <div>Soy un Div</div>
-    <div>Soy un Div</div>
-    <div>Soy un Div</div>
-    <p>
-      Lorem ipsum dolor sit amet <mark>consectetur adipisicing elit.</mark> Incidunt modi est saepe quibusdam ut in
-      doloremque architecto voluptatem, <b>quaerat quae</b> adipisci enim, <i>aliquam obcaecati</i> nemo neque, animi
-      inventore molestias debitis.
-    </p>
-    <img src="./example/emma-stone-magazine-2.webp" alt="" />
+    <main class="magazine">
+      <header class="magazine__title">
+        <h1>Vogue</h1>
+        <span>Jul</span>
+      </header>
+
+      <img class="model" src="./assets/img/emma-stone-model-1.png" alt="A Model Front Page" />
+
+      <section class="content">
+        <aside class="content__left">
+          <article class="content__wording">
+            <h2>
+              Fashion CHecklist
+              <span class="content__wording--pink"> Summer Heats Up</span>
+            </h2>
+            <p>
+              What to <br />
+              Wear Now <br />
+            </p>
+          </article>
+          <span class="content__wording--pink">+</span>
+          <article class="content__wording">
+            <h2>
+              What You'll <br />
+              Want For
+              <span class="content__wording--pink">Fall</span>
+            </h2>
+          </article>
+          <article class="content__wording">
+            <h2>
+              Hard to <br />
+              Swallow
+            </h2>
+            <p>
+              An Unexpected <br />
+              Link to <br />
+              depression
+            </p>
+          </article>
+          <img src="./assets/img/bar-code.jpg" alt="Bar Code" />
+        </aside>
+        <aside class="content__right">
+          <article class="content__wording">
+            <h2>
+              Anithing Goes
+              <span class="content__wording--pink">Emma Stone</span>
+            </h2>
+            <p>
+              From funny girl <br />
+              to spider-man <br />
+              Leading Lady
+            </p>
+          </article>
+          <article class="content__wording">
+            <h2>
+              Styling
+              <span> 9 </span>
+              <span> To </span>
+              <span> 5 </span>
+            </h2>
+          </article>
+          <article class="content__wording">
+            <h2>Exclusive</h2>
+            <p>
+              Inside the <br />
+              Year's most <br />
+              glamours <br />
+              party
+            </p>
+          </article>
+          <article class="content__wording">
+            <h2>Beauty Express</h2>
+            <p>
+              hair color in a flash <br />
+              <span class="content__wording--pink">Plus</span> the ultimate <br />
+              romantic getaway spa
+            </p>
+          </article>
+        </aside>
+      </section>
+    </main>
   </body>
 </html>

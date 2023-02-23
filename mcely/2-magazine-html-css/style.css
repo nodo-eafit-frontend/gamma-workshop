@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
 *,
 *::before,
 *::after {
@@ -128,14 +129,20 @@ article {
   align-self: inherit;
 }
 
-@font-face {
-  font-family: "vogue";
-  src: url("../fonts/Vogue.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2e/Wood_background.jpg");
+  background-size: cover;
+  background-repeat: round;
 }
-img {
-  width: 100px;
+
+.magazine {
+  background-color: red;
+  width: 50vw;
+  height: 85vh;
+  margin: auto;
+}
+.magazine__title {
+  font-size: 7.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,31 @@
 @import './assets/styles';
 
-img {
-  width: 100px;
+body {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2e/Wood_background.jpg');
+  background-size: cover;
+  background-repeat: round;
+}
+
+.magazine {
+  background-color: red;
+  width: 50vw;
+  height: 85vh;
+  margin: auto;
+
+  &__title {
+    font-size: $font-size-l;
+  }
+}
+
+.content {
+  &__content-left {
+  }
+
+  &__content-right {
+  }
+
+  &__wording {
+    &--pink {
+    }
+  }
 }
