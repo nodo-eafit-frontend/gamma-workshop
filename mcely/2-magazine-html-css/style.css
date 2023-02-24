@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*
+  320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV
+*/
 @import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
 *,
 *::before,
@@ -16,11 +24,10 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--typography-principal);
-  font-size: var(--font-size-md);
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 3.2vh;
   font-weight: 400;
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  color: #0b181f;
   box-sizing: border-box;
   line-height: 1.4; /* Optional */
   hyphens: auto; /* Optional */
@@ -130,19 +137,77 @@ article {
 }
 
 body {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2e/Wood_background.jpg");
+  background-image: url("./assets/img/wood_background.jpg");
   background-size: cover;
   background-repeat: round;
 }
 
 .magazine {
-  background-color: red;
-  width: 50vw;
+  width: 60vh;
   height: 85vh;
-  margin: auto;
+  margin: 7.5vh auto;
+  background-image: url("./assets/img/green_background.webp");
+  background-size: cover;
+  position: relative;
+  box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.4);
 }
 .magazine__title {
-  font-size: 7.2rem;
+  font-family: "Arapey", serif;
+  font-size: 19.5vh;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-inline: auto;
+  width: fit-content;
+}
+.magazine__title h1 {
+  line-height: 0.8;
+}
+.magazine__title span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5vh;
+}
+.magazine__model {
+  position: absolute;
+  top: 0;
+  left: 6%;
+  height: 100%;
+  z-index: 10;
+}
+
+.content {
+  z-index: 20;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.content__left {
+  font-weight: 500;
+}
+.content__right {
+  visibility: hidden;
+  font-weight: 400;
+}
+.content__wording {
+  line-height: 1;
+}
+.content__wording--pink {
+  color: #ea0284;
+}
+.content__wording p {
+  font-size: 2.8vh;
+}
+.content__wording b:first-child {
+  font-size: 5.6vh;
+}
+.content__wording b:last-child {
+  font-size: 4.1vh;
+}
+
+.content__bar-code {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

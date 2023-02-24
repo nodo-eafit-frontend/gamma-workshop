@@ -15,11 +15,10 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--typography-principal);
-  font-size: var(--font-size-md);
+  font-family: $font-secundary;
+  font-size: $font-size-m;
   font-weight: 400;
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  color: $color-primary;
   box-sizing: border-box;
 
   line-height: 1.4; /* Optional */
