@@ -1,0 +1,120 @@
+//Amarillo=#e9eb93
+@import './assets/styles/index';
+
+
+body{   
+    font-family: $font-prymary;
+
+}
+
+.magazine{
+    background-image:linear-gradient(to right, rgb(22, 22, 22),grey);
+    width: 50vw;
+    height: 105vh;
+    border: 1px solid black;
+    margin: 7.5vh auto;
+    position: relative;
+    box-shadow: $shadow-magazine;
+    text-shadow:$shadow-magazine ;
+    &__titulo{
+        font-size: $font-size-large;
+        text-decoration: underline;
+        color: white;
+        text-align: center;
+        
+        
+    }
+    
+    
+    &__model{
+        position: absolute;
+        top: 15vh;
+        width: 50vw;
+        height: 90vh;
+        z-index: $z-index-model;
+    }
+
+
+}
+
+.content{
+    position: relative;
+    z-index: $z-index-section;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-shadow:$shadow-magazine ;
+
+    &__left{
+        line-height: 0.8;
+        text-transform: uppercase;
+        position: relative;
+        left: 2vh;
+        
+        h1{
+            
+            font-size: 20vh;
+        }
+        h2{
+            font-size: 4.5vh;
+        }
+        h3{
+            font-size: 10vh;
+        }
+        h4{
+            font-size: 10vh;
+        }
+        h5{
+            font-size: 6.5vh;
+        }
+        &--1{
+            font-size: 3.5vh;
+        }
+        &--yellow{
+            color: #e9eb93;
+        }
+        &--2{
+            font-size: 2.9vh;
+        }     
+        
+    }
+    &__separadores{
+        &--1{
+            height: 3vh;
+            width: 13vh;
+            background: grey;
+            margin: 0;
+            margin-bottom: 0.3vh;
+        }
+        &--2{
+            height: 0.1vh;
+            width: 13vh;
+            background: grey; 
+            margin: 0;
+            margin-bottom: 0.3vh;
+        }
+        &--3{
+            height: 0.1vh;
+            width: 13vh;
+            background: grey; 
+            margin: 0;
+            margin-bottom: 0.3vh;
+        }
+        &--4{
+            height: 0.1vh;
+            width: 13vh;
+            background: grey;
+            margin: 0;
+            margin-bottom: 0.3vh; 
+        }
+    }
+
+    
+    &__right-information{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 45vh;
+        right: 2vh;
+    }
+}
