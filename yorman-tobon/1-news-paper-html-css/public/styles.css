@@ -88,10 +88,9 @@ main{
     display: flex;
 }
 
-.main-news-container {
+section.main-news-container {
     height: auto;
     width: 100%;
-
 }
 
 .main-card{
@@ -121,10 +120,31 @@ main{
 
 .main-card p{
     font-size: 1.4rem;
-    text-align: center;font-weight: lighter;
+    text-align: center;
+    font-weight: lighter;
     color: var(--soft-blue);
+    margin: 25px 18px 35px 18px;
 }
 
+.main--button-container{
+    position: relative;
+    width: 33.33%;
+    margin: 0px 0px 35px 140px;
+}
+
+
+.main--button-container a{
+    width: 350px;
+    height: 300px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: var(--rojo-desvanecido);
+    background-color: var(--just-white);
+    
+  }
 
 @media only screen and (max-width: 340px) {
     main{
