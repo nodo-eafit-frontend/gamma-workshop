@@ -1,0 +1,66 @@
+@import './assets/styles';
+
+.magazine{
+    width: 60vh;
+    height: 85vh;
+    margin: 7.5vh auto;
+    background: rgb(250,250,250);
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgba(116,191,218,0.9724264705882353) 100%);
+    position: relative;
+    box-shadow: $shadow-magazine;
+
+    &__title{
+        font-size: $font-size-xl;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-inline: auto;
+        width: fit-content;   
+    }
+    &__title h1{
+        line-height: 0.8;
+        color: $color-secondary;
+    }
+    &__title span {
+        font-family: system-ui;
+        font-size: $font-size-s;
+        align-self: end;
+        font-weight: 100;
+    }
+    &__model{
+    position: absolute;
+    top: 0;
+    left: -25px;
+    height: 100%;
+    z-index: $z-index-model;
+    }
+}
+
+.content {
+    position: relative;
+    z-index: $z-index-section;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        font-size: 3.2vh;
+        font-family: $font-secondary;
+    }
+    &__right{
+
+    }
+    &__wording{
+        font-weight: 500;
+        margin: 0 0.5vh;
+        &--pink{
+            color: $color-secondary;
+        }
+        &--
+    }
+    
+    img{
+        width: 15vh;
+        height: auto;
+        margin: 8px;
+    }
+}
