@@ -3,7 +3,7 @@
   - https://www.youtube.com/watch?v=Foieq2jTajE&t=405s
   - https://github.com/eduardofierropro/Reset-CSS
 */
-@import url("https://fonts.googleapis.com/css2?family=Arapey&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Arapey&family=Bilbo&family=Carattere&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
 @font-face {
   font-family: "KaushanScript-Regular";
   font-style: normal;
@@ -185,18 +185,57 @@ article {
   justify-content: space-between;
 }
 .content__left {
-  font-size: 3.2vh;
+  font-size: 2.8vh;
   font-family: "M PLUS 1p", sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content__right {
+  font-size: 2.8vh;
+  font-family: "M PLUS 1p", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
 .content__wording {
   font-weight: 500;
-  margin: 0 0.5vh;
+  margin: 1.5vh 0.5vh;
+  display: flex;
+  flex-direction: column;
 }
 .content__wording--pink {
   color: #ea0284;
 }
-.content span:first-child {
-  font-size: 16vh;
+.content__wording--small {
+  font-size: 1.8vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2.3vh;
+}
+.content__wording--big {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 13vh;
+  font-weight: 100;
+  line-height: 0.6;
+}
+.content__wording--cursive {
+  font-family: "Carattere", cursive;
+  font-size: 4vh;
+  text-transform: lowercase;
+  font-weight: 100;
+}
+.content__wording--cursiveTitle {
+  font-family: "Carattere", cursive;
+}
+.content__wording--extrasmall {
+  font-size: 1vh;
+}
+.content__wording h2:first-child {
+  font-family: "Carattere", cursive;
 }
 .content img {
   width: 15vh;
