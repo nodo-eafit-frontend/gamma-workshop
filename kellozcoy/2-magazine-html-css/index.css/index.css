@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    margin: 20px;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.cabecera h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 70px;
+    margin-top: 60px;
+    height: 100px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.information-header {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    border: 2px black solid;
+    border-right: transparent;
+    border-left: transparent;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+}
+
+.right-side-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side-content h2 {
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+}
+
+.inside-content {
+    display: flex;
+}
+
+.image-center {
+    height: 500px;
+    width: 300px;
+}
