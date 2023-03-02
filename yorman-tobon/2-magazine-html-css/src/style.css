@@ -1,0 +1,23 @@
+:root{
+    --primary-color: #2e2b26;
+}
+
+body{
+
+}
+
+.magazine{
+    background-image: url(../assets/img/fondo.png);
+    width: 80vh;
+    height: 79vh;
+}
+
+.magazine img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    height: 64vh;
+    margin-top: 85px;
+
+}
