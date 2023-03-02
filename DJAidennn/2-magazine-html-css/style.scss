@@ -1,0 +1,126 @@
+@import './assets/styles/';
+
+body {
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.magazine {
+  width: 60vh;
+  height: 85vh;
+  margin: 4.5vh auto;
+
+  background-color: #4a4848;
+  background-size: cover;
+
+  position: relative;
+
+  box-shadow: $shadow-magazine;
+
+  &__title {
+    font-family: $font-primary;
+    font-size: $font-size-xl;
+    text-transform: uppercase;;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: fit-content;
+  }
+
+  &__title h1 {
+    line-height: 1;
+    font-family: $font-primary;
+    font-size: $font-size-xl;
+    text-align: start;
+
+  }
+
+  &__model {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    height: 85%;
+    z-index: $z-indez-model;
+  }
+
+}
+
+.content {
+  z-index: $z-indez-section;
+  font-size: $font-size-s;
+  position: relative;
+  display: inline-flex;
+  line-height: 100px;
+  
+
+  &__left {
+
+    font-size: $font-size-s ;
+    position: absolute;
+    
+  }
+
+  &__right {
+    align-items: end;
+    font-size: $font-size-s;
+    position: absolute; 
+    margin-left: 43vh;
+    
+    
+      
+  }
+
+  &__bottom {
+    display: flexbox;
+    font-size: $font-size-s;
+    top: 80%;
+    content: 18.5vh 4.5vh 4vh 5vh;
+    position: absolute;
+    display: none;
+       
+    
+    
+   
+  }
+
+  &__wording {
+    line-height: 1.5;
+    &--red {
+      color: $color-secondary;
+      font-family: 'Golos Text', sans-serif;
+      font-size: $font-size-m;
+      text-transform: uppercase;
+      font-weight: 40%;
+      align-items: end;
+      
+      
+    }
+
+    h1 {
+      font-size: 1.6vh;
+    }
+
+    h2:first-child {
+      font-size: 1.6vh;
+    }
+
+    h2:last-child {
+      font-size: 1.6vh;
+    }
+  }
+}
+
+.content__barcode {
+  display: flexbox;
+  position: absolute;
+  width: 12vh;
+  height: 10vh;
+  left: 75%;
+  top: 85%;
+
+
+  
+}
+
+

@@ -1,0 +1,231 @@
+/**
+  Fuentes:
+  - https://www.youtube.com/watch?v=Foieq2jTajE&t=405s
+  - https://github.com/eduardofierropro/Reset-CSS
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@700&family=Kalam:wght@700&family=Libre+Caslon+Text&family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  /** 16px * 0.625 = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 3.2vh;
+  font-weight: 400;
+  color: #ffffff;
+  box-sizing: border-box;
+  line-height: 1.4; /* Optional */
+  hyphens: auto; /* Optional */
+  font-smooth: always; /* Optional */
+  -webkit-font-smoothing: antialiased; /* Optional */
+  -moz-osx-font-smoothing: grayscale; /* Optional */
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover; /* optional*/
+  object-position: center center; /* optional*/
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  align-self: inherit;
+}
+
+hr {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 0.3rem;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  appearance: none; /* Optional */
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+main,
+section,
+aside,
+article {
+  align-self: inherit;
+}
+
+body {
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.magazine {
+  width: 60vh;
+  height: 85vh;
+  margin: 4.5vh auto;
+  background-color: #4a4848;
+  background-size: cover;
+  position: relative;
+  box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.4);
+}
+.magazine__title {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 11.5vh;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: fit-content;
+}
+.magazine__title h1 {
+  line-height: 1;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 11.5vh;
+  text-align: start;
+}
+.magazine__model {
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  height: 85%;
+  z-index: 10;
+}
+
+.content {
+  z-index: 10;
+  font-size: 1.4rem;
+  position: relative;
+  display: inline-flex;
+  line-height: 100px;
+}
+.content__left {
+  font-size: 1.4rem;
+  position: absolute;
+}
+.content__right {
+  align-items: end;
+  font-size: 1.4rem;
+  position: absolute;
+  margin-left: 43vh;
+}
+.content__bottom {
+  display: flexbox;
+  font-size: 1.4rem;
+  top: 80%;
+  content: 18.5vh 4.5vh 4vh 5vh;
+  position: absolute;
+  display: none;
+}
+.content__wording {
+  line-height: 1.5;
+}
+.content__wording--red {
+  color: #c23a55;
+  font-family: "Golos Text", sans-serif;
+  font-size: 3.2vh;
+  text-transform: uppercase;
+  font-weight: 40%;
+  align-items: end;
+}
+.content__wording h1 {
+  font-size: 1.6vh;
+}
+.content__wording h2:first-child {
+  font-size: 1.6vh;
+}
+.content__wording h2:last-child {
+  font-size: 1.6vh;
+}
+
+.content__barcode {
+  display: flexbox;
+  position: absolute;
+  width: 12vh;
+  height: 10vh;
+  left: 75%;
+  top: 85%;
+}
+
+/*# sourceMappingURL=style.css.map */
