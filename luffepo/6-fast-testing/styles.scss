@@ -1,0 +1,63 @@
+img{
+    width: 100px;
+}
+
+div {
+    background-color: rgb(12, 91, 91);
+    width: 100px;
+    height: 100px;
+    border: 1px black solid;
+    padding: 10px;
+    margin: 15px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(159, 164, 162);
+
+    &__casa{
+        color: rgba(255, 255, 255, 0);
+        background-color: rgb(158, 0, 0);
+        vertical-align: middle ;
+        text-align: center;
+        transition: background-color 0.5s ;
+
+        &:hover {
+        background-color: darkgoldenrod ; 
+        cursor:move;
+        transition: background-color 0.5s ;
+        }
+    section{
+        background-color: rgb(0, 255, 153);
+        }
+    &--rojo{
+        background-color: darkmagenta;
+    }
+    }
+}
+main span:first-child{
+    background-color: beige;
+}
+div.mi-clase {
+    background-color: blueviolet;
+    position: relative;
+
+    &::after { 
+    background-color: rgb(153, 0, 241);
+    content: "10";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -25;
+    left: -25;
+    border-radius: 100px;
+    line-height: 2;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    }
+    &::before {
+    background-color: rgb(40, 0, 241);
+    content: "before";
+}
+}
