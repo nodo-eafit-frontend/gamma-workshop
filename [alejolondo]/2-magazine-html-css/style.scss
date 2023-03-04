@@ -87,10 +87,12 @@
 
         }
         &--extrasmall{
-            font-size: 1vh;
+            font-size: 2vh;
         }
         h2:first-child{
             font-family: $font-cursive2;
+            font-size: 4vh;
+            line-height: 0.8;
         }
         
     }

@@ -232,10 +232,12 @@ article {
   font-family: "Carattere", cursive;
 }
 .content__wording--extrasmall {
-  font-size: 1vh;
+  font-size: 2vh;
 }
 .content__wording h2:first-child {
   font-family: "Carattere", cursive;
+  font-size: 4vh;
+  line-height: 0.8;
 }
 .content img {
   width: 15vh;
