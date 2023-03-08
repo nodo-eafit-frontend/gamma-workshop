@@ -1,11 +1,11 @@
 const express = require('express');
 
-const app = express ();
-const port = 301;
+const app = express();
+const port = 3001;
 
 // API
 app.get('/', (req, res) => {
-    // Aquí obtener info del json cualquier cosa
+    res.send('Hello world');
   });
   
   app.listen(port, () => {
