@@ -1,13 +1,21 @@
 const express = require('express');
+const fs = require('fs');
 
 const app = express();
 const port = 3001;
 
-// API
+// API GET
 app.get('/', (req, res) => {
-  // Aquí obtener info del json cualquier cosa
+  // llamar a la bd (json)
+
+  fs.readFile('../data/inicio.json', (err, data) => {
+    if (err) {
+      return;
+    }
+
+    const elDato = JSON.parse(data);
+    res.send(elDato);
+  });
 });
 
-app.listen(port, () => {
-  console.log('Servidor corriendo... 😀');
-});
+app.listen(port, () => console.log('Servidor corriendo... 😀'));
