@@ -1,0 +1,19 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "ser4ver side of my app",
+  "main": "index.js",
+  "scripts": {
+    "swtart":"node --watch index.js",
+       "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "~/nodo/gamma-workshop/acparedesa/7-Project-speed-testing/server-side"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Acparedes",
+  "license": "ISC"
+}

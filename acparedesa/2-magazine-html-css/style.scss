@@ -7,7 +7,7 @@ h3.upper {
 .magazine {
   width: 60vh;
   height: 85vh;
-  background-color: #76b5c5;
+  background-color: $color-primary;
   background-size: cover;
   margin: 7.5vh auto;
   position: relative;
@@ -28,6 +28,13 @@ h3.upper {
   right: 2vw;
 }
 .content {
+  position: absolute !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
   &__subtitle {
     font-family: $font-secondary;
     font-size: 3vw;
@@ -36,7 +43,7 @@ h3.upper {
     text-align: center;
     justify-content: center;
     line-height: 2.5vw;
-    margin-top: 30% !important;
+    margin-top: 65% !important;
 
     span:first-child,
     span:last-child {
@@ -64,9 +71,20 @@ h3.upper {
   }
 }
 
-.photo {
+.img {
   width: 100%;
-  position: absolute;
+  position: absolute !important;
   top: 12%;
   z-index: 1;
+}
+
+.date {
+  font-family: $font-third;
+  font-size: 0.6vw;
+  color: ghostwhite;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 23vw;
+  right: 4vw;
+  white-space: nowrap;
 }
