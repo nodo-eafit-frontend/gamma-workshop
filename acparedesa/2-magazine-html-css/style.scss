@@ -1,0 +1,72 @@
+@import "./assets/styles";
+
+h3.upper {
+  text-transform: uppercase;
+}
+
+.magazine {
+  width: 60vh;
+  height: 85vh;
+  background-color: #76b5c5;
+  background-size: cover;
+  margin: 7.5vh auto;
+  position: relative;
+
+  &__title {
+    font-family: $font-primary;
+    color: ghostwhite;
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+.beauty {
+  font-family: $font-third;
+  color: ghostwhite;
+  font-size: 1vw;
+  position: absolute;
+  top: 2.5vw;
+  right: 2vw;
+}
+.content {
+  &__subtitle {
+    font-family: $font-secondary;
+    font-size: 3vw;
+    color: ghostwhite;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 2.5vw;
+    margin-top: 30% !important;
+
+    span:first-child,
+    span:last-child {
+      font-size: 1vw;
+      font-size: 1vw;
+      color: ghostwhite;
+      margin-top: 14px;
+      margin-inline: 15px;
+    }
+  }
+  &__left {
+    font-family: $font-third;
+    color: ghostwhite;
+    font-size: 1vw;
+    padding-left: 5%;
+    line-height: 11px;
+  }
+  &__end {
+    font-family: $font-secondary;
+    color: ghostwhite;
+    display: flex;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+
+.photo {
+  width: 100%;
+  position: absolute;
+  top: 12%;
+  z-index: 1;
+}
