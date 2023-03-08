@@ -1,0 +1,11 @@
+{
+  "title_page": "Reflextest | Estadísticas",
+  "header": {
+    "title": "Estadísticas"
+  },
+  "players": [
+    { "name": "player 1", "score": 123456, "time": "", "max_speed": "" },
+    { "name": "player 2", "score": 123456, "time": "", "max_speed": "" }
+  ],
+  "version": "1.0.0"
+}
