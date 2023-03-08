@@ -1,0 +1,12 @@
+{
+    "title_page": "Reflextest",
+    "header": {
+        "logo": "url",
+        "title": "Reflextest",
+        "menu": [{ "name": "inicio", }]
+
+    },
+    "main": {},
+    "footer": {},
+        "version": ""
+}

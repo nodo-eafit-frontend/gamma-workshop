@@ -1,0 +1,15 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "This organize the data info",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server-side"
+  ],
+  "author": "JohanitaM",
+  "license": "ISC"
+}
