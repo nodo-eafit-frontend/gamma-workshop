@@ -5,7 +5,7 @@ const port = 3001;
 
 // API
 app.get('/', (req, res) => {
-  // Aquí obtener info del json
+  // Aquí obtener info del json cualquier cosa
 });
 
 app.listen(port, () => {
