@@ -66,12 +66,4 @@ div.mi-clase::before {
   content: "Before";
 }
 
-/*Para seleccionar un elemento en html el orden del peso es:
--iline-style
--id
--class
--elemento
--pseudo-element
-*/
-
 /*# sourceMappingURL=style.css.map */

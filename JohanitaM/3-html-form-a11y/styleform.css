@@ -130,4 +130,54 @@ article {
   align-self: inherit;
 }
 
+body {
+  background-image: url "https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg";
+  background-image: url(./assets/img/003-wood-melamine-subttle-pattern-background-pat.jpg);
+  background-size: cover;
+  margin: 30px;
+}
+
+.form {
+  display: inline-block;
+  background-color: aliceblue;
+  color: #0e0e10;
+  width: 80vh;
+  height: auto;
+  width: 85vh;
+  margin: 40 20 20 80;
+  background-image: url(./assets/img/pexels-mudassir-ali-2680270.jpg);
+  position: relative;
+  font-size: 3vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  padding: 5vh;
+  box-shadow: 4px 5px 0px 4px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  border: solid 1px #999;
+}
+
+.title {
+  flex-direction: row;
+  font-size: 11.5vh;
+  font-family: "Roboto", sans-serif;
+  float: right;
+  align-items: flex-end;
+}
+
+.title img {
+  max-width: 10%;
+  width: 10%;
+  float: left;
+  transform: rotate(-10deg);
+  margin-top: 40px; /* ajustar los valores para mover la imagen */
+}
+
+.paragraphs__p {
+  display: inline;
+  font-size: 4.5vh;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=styleform.css.map */
