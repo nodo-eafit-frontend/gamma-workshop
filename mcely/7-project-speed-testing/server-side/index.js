@@ -4,7 +4,7 @@ const app = express();
 const port = 3001;
 
 // API
-app.get('/', (req, res) => {
+app.get('/facebook.com', (req, res) => {
   // Aquí obtener info del json cualquier cosa
 });
 
