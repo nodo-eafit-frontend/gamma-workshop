@@ -128,32 +128,26 @@ article {
   align-self: inherit;
 }
 
-h3.upper {
-  text-transform: uppercase;
-}
-
 .magazine {
   width: 60vh;
   height: 85vh;
   background-color: #6dafc7;
-  background-size: cover;
   margin: 7.5vh auto;
   position: relative;
 }
 .magazine__title {
   font-family: "Rubik Bubbles", cursive;
   color: ghostwhite;
-  font-size: 9vw;
+  font-size: 18vh;
   text-align: center;
 }
-
-.beauty {
+.magazine__subtitle {
   font-family: "Roboto", cursive;
   color: ghostwhite;
-  font-size: 1vw;
+  font-size: 2.2vh;
   position: absolute;
-  top: 2.5vw;
-  right: 2vw;
+  top: 2.5vh;
+  right: 2vh;
 }
 
 .content {
@@ -164,56 +158,70 @@ h3.upper {
   right: 0;
   z-index: 10;
 }
-.content__subtitle {
-  font-family: "Aboreto", cursive;
-  font-size: 3vw;
-  color: ghostwhite;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  line-height: 2.5vw;
-  margin-top: 65% !important;
-}
-.content__subtitle span:first-child,
-.content__subtitle span:last-child {
-  font-size: 1vw;
-  font-size: 1vw;
-  color: ghostwhite;
-  margin-top: 14px;
-  margin-inline: 15px;
-}
 .content__left {
   font-family: "Roboto", cursive;
   color: ghostwhite;
-  font-size: 1vw;
+  font-size: 2.2vh;
   padding-left: 5%;
-  line-height: 11px;
+  line-height: 2.2vh;
+  position: relative;
+  z-index: 20;
 }
-.content__end {
+.content__left--upper {
+  text-transform: uppercase;
   font-family: "Aboreto", cursive;
+  font-size: 2.5vh;
+}
+.content__bottom {
+  font-family: "Aboreto", cursive;
+  width: 100%;
   color: ghostwhite;
+  position: absolute;
+  z-index: 20;
   display: flex;
+  flex-direction: column;
   text-align: center;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+  top: 38vh;
+}
+.content__bottom--date {
+  font-family: "Roboto", cursive;
+  font-size: 1.5vh;
+  color: ghostwhite;
+  position: absolute;
+  left: 49vh;
+  top: 8.3vh;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.content__bottom--subtitle {
+  display: flex;
+  width: 100%;
+  font-size: 8vh;
+  line-height: 6vh;
   justify-content: center;
 }
-
-.img {
-  width: 100%;
-  position: absolute !important;
-  top: 12%;
-  z-index: 1;
-}
-
-.date {
-  font-family: "Roboto", cursive;
-  font-size: 0.6vw;
+.content__bottom--subtitle span {
+  font-size: 3vh;
   color: ghostwhite;
-  writing-mode: vertical-rl;
-  position: absolute;
-  top: 23vw;
-  right: 4vw;
-  white-space: nowrap;
+  margin: 3vh 1vh;
 }
+.content__bottom--subtitle--end {
+  font-size: 1.8vh;
+}
+.content .img {
+  width: 100%;
+  position: absolute;
+  top: -79%;
+  z-index: 10;
+}
+
+/*
+writing-mode: vertical-rl;
+position: absolute;
+top: 23vw;
+right: 4vw;
+white-space: nowrap;*/
 
 /*# sourceMappingURL=style.css.map */

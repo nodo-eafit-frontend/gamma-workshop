@@ -1,19 +1,18 @@
 {
-  "name": "server-side",
+  "name": "reflex-text",
   "version": "1.0.0",
-  "description": "ser4ver side of my app",
+  "description": "server side of my app",
   "main": "index.js",
   "scripts": {
-    "swtart":"node --watch index.js",
-       "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "~/nodo/gamma-workshop/acparedesa/7-Project-speed-testing/server-side"
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "test"
+    "server"
   ],
-  "author": "Acparedes",
-  "license": "ISC"
+  "author": "Astrid Paredes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

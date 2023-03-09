@@ -1,59 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Zeyada&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Zeyada&display=swap');
-@media(max-width: 750px){
-  .container1, .container2 {
+html {
+  background-image: url("paper.jpg");
+  background-size: 60vh 85vh;
+  width: 60vh;
+  height: 85vh;
+}
+
+/*@media (max-width: 750px) {
+  .container1,
+  .container2 {
     display: flex;
   }
+}*/
+
+header {
+  font-family: "Babylonica", cursive;
+  font-size: 22px;
 }
 
-header{
-  font-family: 'Babylonica', cursive;
-  font-size: 22px
-}
-
-#line1{
+#line1 {
   border-color: black;
-
 }
 
-main{ font-family: "Zeyada", cursive;
-  font-size: 18px
-
+main {
+  font-family: "Zeyada", cursive;
+  font-size: 18px;
 }
 
-  h2 {
-    color: rgb(55, 42, 0); text-decoration: underline;
-  }
+h2 {
+  color: rgb(55, 42, 0);
+  text-decoration: underline;
+}
 
-  .container1 {
-    column-count:3;
-    
+.container1 {
+  column-count: 3;
+}
 
-  }
+.container2 {
+  column-count: 2;
+}
 
-  .container2 {
-    column-count:2;
-  }
+p {
+  color: rgb(38, 20, 0);
+}
 
- html {
-    background-image: url("paper.jpg");
-      }
-
-p {color: rgb(38, 20, 0);
-
-   }
-  
-
-
-  .rot{
-    -webkit-transform: rotate(-90deg); 
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    height:580px;
-    width:400px;    
-   }
-
-   
-
+.rot {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  height: 580px;
+  width: 400px;
+}
