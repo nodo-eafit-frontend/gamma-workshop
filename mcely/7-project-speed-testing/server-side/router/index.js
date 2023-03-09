@@ -1,4 +1,18 @@
 const express = require('express');
+const fs = require('fs');
 const router = express.Router();
+
+const homePagePath = './database/page-structure/home-page.json';
+
+router.get('/', (req, res) => {
+  fs.readFile(homePagePath, (err, data) => {
+    if (err) {
+      res.statusCode(400);
+    } else {
+      const elDato = JSON.parse(data);
+      res.status(200).send(elDato);
+    }
+  });
+});
 
 module.exports = router;
