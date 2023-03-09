@@ -10,11 +10,11 @@ app.get('/', (req, res) => {
 
   fs.readFile('../data/inicio.json', (err, data) => {
     if (err) {
-      return;
+      res.statusCode(400);
+    } else {
+      const elDato = JSON.parse(data);
+      res.status(200).send(elDato);
     }
-
-    const elDato = JSON.parse(data);
-    res.send(elDato);
   });
 });
 
