@@ -1,0 +1,82 @@
+@import './assets/styles';
+
+body {
+  background-image: url('./assets/img/wood_background.jpg');
+  background-size: cover;
+  background-repeat: round;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.magazine {
+  width: 70vh;
+  height: 95vh;
+  background-image: url('./assets/img/Nebulosa.jpg');
+  background-size: cover;
+  position: relative;
+  box-shadow: $shadow-magazine;
+  z-index: $z-index-terc;
+
+  &__prz__logo {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  &__prz {
+    display: block;
+    margin:  auto;
+    width: 80%;
+  }
+
+
+  &__title {
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+
+    & h1 {
+      color: $color-secondary;
+      font-size: $font-size-l;
+      background-color: $color-primary;
+      padding-right: 10px;
+    }
+
+    & h2 {
+      color: $color-primary;
+      font-size: $font-size-s;
+      padding-right: 10px;
+    }
+  }
+}
+
+.content {
+
+  &__wording {
+    font-size: $font-size-m;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &--yellow {
+      color: $color-tertiary;
+    }
+  }
+
+  &__left--bar-code {
+    width: 10vh;
+    transform: rotate(270deg);
+    top: 50px;
+    left: 0px;
+    position: absolute;
+  }
+
+  &__rigth--meteorite {
+    width: 15vh;
+    transform: rotate(90deg);
+    right: 5vh;
+    bottom:20vh;
+    position: absolute;
+    z-index: $z-index-seco;
+  }
+}

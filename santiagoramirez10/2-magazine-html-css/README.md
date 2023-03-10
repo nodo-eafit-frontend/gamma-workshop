@@ -1,15 +1,7 @@
-### Implement your own magazine design
+Magazine made with HTML, CSS and SASS.
 
-Try to use your CSS skills and break your creativity. Taking into account this advices.
-- Find out your assets like images, logo, colors palette & fonts.
-- Create Semantic HTML
-- Identify the elements can be repeatable & wrap them in classes
-  - Take a look at [BEM](https://animaticss.com/articulo/que-es-bem-css/)
-  - Make it simple
-- Rely on elements, classes & ids for the css selectors
-- Google on 🔎:
-  - z-index
-  - position
-  - display
-  - flexbox
- - Enjoy!! 🤯
+Original magazine: https://http2.mlstatic.com/D_NQ_NP_917492-MLA42401079667_062020-V.jpg
+
+See the preview:
+
+<img src="https://github.com/nodo-eafit-frontend/gamma-workshop/blob/feature/santiagoramirez10/santiagoramirez10/2-magazine-html-css/assets/img/preview.jpg"> 

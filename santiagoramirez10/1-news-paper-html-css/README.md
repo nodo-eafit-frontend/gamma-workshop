@@ -1,4 +1,4 @@
-Newspaper made with html and css.
+Newspaper made with HTML and CSS.
 
 Original newspaper: https://www.marvel.com/articles/comics/x-men-hellfire-gala-2022-highlights
 
