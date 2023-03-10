@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
@@ -18,11 +18,27 @@ const styleBackground = {
 
 const App = (props) => {
   const { saludo, cedula } = props;
+  const [background, setBackground] = useState(styleBackground);
 
-  const [background, setBackground] = React.useState(styleBackground);
+  useEffect(() => {
+    console.log('Nací');
+
+    const url = 'http://localhost:3001/';
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      });
+
+    return () => {
+      console.log('Morí X_X');
+    };
+  }, []);
 
   const handlerClick = (event) => {
-    setBackground({ backgroundColor: getRandomColor() });
+    const newBackground = { backgroundColor: getRandomColor() };
+    setBackground(newBackground);
   };
 
   return (
@@ -34,9 +50,6 @@ const App = (props) => {
         </button>
         <h1>{saludo}</h1>
         <code>{cedula}</code>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
       </header>
     </div>
   );

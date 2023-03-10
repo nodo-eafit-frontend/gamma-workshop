@@ -6,6 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 const saludar = (nombre) => `Hola ${nombre}, ¿Cómo estás?`;
 
+let show = true;
+
+setTimeout(() => {
+  show = false;
+}, 5000);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
