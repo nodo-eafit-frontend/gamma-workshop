@@ -4,10 +4,12 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const saludar = (nombre) => `Hola ${nombre}, ¿Cómo estás?`;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App saludo={saludar('Daniel')} cedula={123412} />
   </React.StrictMode>
 );
 
