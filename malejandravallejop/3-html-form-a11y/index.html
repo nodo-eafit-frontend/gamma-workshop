@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+    <form action="/formulario" metod="get">
+        <section class="form-register">
+            <h3>Registration form</h3>
+            <br>
+            <label for="name">Name</label> 
+            <input class="items" type="text" id="name" name="name" placeholder="your name..."/> 
+            <br>
+            <label for="lastName">Last name</label> 
+            <input class="items"type="text" id="lastName" name="lastName" placeholder="your lastName..."/>
+            <br>
+            <label for="date">Date</label> 
+            <input class="items"type="date" id="date" name="date" placeholder="your date..."/>
+            <br>
+            <label for="email">Email</label> 
+            <input class="items"type="text" id="email" name="email" placeholder="your email..."/>
+            <br>
+            <label class="sex" for="sex">Sex</label> 
+            <select>
+                <option selected disabled> Choose your sex</option>
+                <option value="femenino"> Femenino</option>
+                <option value="masculino"> Masculino</option>
+            </select>
+            <br>
+            <br>
+            <label for="comment">Comment</label> 
+            <textarea class="items"id="comment" placeholder="add you comment..." name="comment"></textarea>
+            <br>
+            <input class="button" type="submit" value= "Enviar" />
+            <br>
+        </section>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/fondo.jpg);
+   
+}
+
+.form-register{
+    width: 400px;
+    background-color:rgba(78, 151, 229, 0.5);
+    padding: 30px;
+    margin: auto;
+    margin-top: 15vh;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h3{
+font-size: 30px;
+margin-bottom: 20px;
+text-align: center;
+font-weight: 700;
+
+}
+
+.items{
+    width: 100%;
+    background-color:rgba(10, 54, 97,0.5);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom:16px;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color:#ffffff;
+    font-weight: 100;
+}
+
+.button {
+    width:100%;
+    background-color:rgba(10, 54, 97,0.5);
+    border: none;
+    padding: 12px;
+    color:aliceblue;
+    margin: 16px o;
+    font-size: 18px;
+}
+label{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+select{
+    background-color:rgba(10, 54, 97,0.5);
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px; 
+    border: 1px solid black;
+
+}
+
+.sex{
+    display:block;
+}
