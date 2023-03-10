@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #2e2b26;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+.magazine {
+  background-image: url(../assets/img/fondo.png);
+  width: 60vh;
+  height: 80vh;
+  margin: 7.5vh auto;
+}
+
+.magazine img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vh;
+  height: 64vh;
+  margin-top: 85px;
+}
+
+/*# sourceMappingURL=style.css.map */
