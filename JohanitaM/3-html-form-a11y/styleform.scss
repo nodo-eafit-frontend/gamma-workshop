@@ -8,53 +8,65 @@ body {
         background-image: url(./assets/img/003-wood-melamine-subttle-pattern-background-pat.jpg);
         background-size: cover;
         margin: 30px;
-}
-
-
-.form {
-    display: inline-block;
-    background-color:aliceblue;
-    color: $color-primary;
-    width: 80vh;
-    height: auto;
-    width: 85vh;
-    margin:40 20 20 80;
-    background-image: url(./assets/img/pexels-mudassir-ali-2680270.jpg);
-    position:relative;
-    font-size: $font-size-m;
-    font-family: $font-alternate;
-    margin: 0 auto;
-    padding:5vh;
-    box-shadow: $shadow-form;
-    border-radius: 5px;
-    border: solid 1px #999;
-
-}
-
-.title {
-    flex-direction: row;
-    font-size: $font-size-xxl;
-    font-family: $font-secundary;
-    float: right; //como hacer que quede el logo antes del titulo en html css
-    align-items: flex-end; 
+        box-sizing: border-box;
+        background-position: 0, 0, 10px, 10px;
+        display: flex;
+        font-family: $font-alternate;
+        min-height: 100vh;
+        flex-direction: column;
     
+      
 }
 
-.title img {
-    max-width: 10%;
-    width: 10%;
-    float: left;
-    transform: rotate(-10deg); //girar imagen  
-    margin-top: 40px; /* ajustar los valores para mover la imagen */
+// .form {
+//     display: inline-flex;
+//     background-color:aliceblue;
+//     color: $color-primary;
+//     width: 90%;
+//     max-width: 400px;
+//     padding: 4.5em 3em;
+//     border-radius: 10px;
+//     background-image: url(./assets/img/pexels-mudassir-ali-2680270.jpg);
+//     position:relative;
+//     font-size: $font-size-m;
+//     // font-family: $font-alternate;
+    // margin-top: 150px;
+    // padding:5vh;
+    // box-shadow: $shadow-form;
+    // border-radius: 5px;
+    // border: solid 2px #999;
+    // position: absolute;
+    // top: 30%;
+    // left: 30%;
+    //  transform: translate(-50%, -50%);
+    //  width: 280px;
+   
+    
+ 
 
 }
 
-.paragraphs {
-    &__p {
-        display: inline;
-        font-size: $font-size-l;
-        font-family: $font-primary;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+// .title {
+//     flex-direction: row;
+//     font-size: $font-size-xxl;
+//     font-family: $font-secundary;
+//     float:inherit; //como hacer que quede el logo antes del titulo en html css
+//     align-items:center; 
+//     top: 30%;
+//     left: 30%;
+//     right: 45%;
+//     transform: translate(50%, 50%);
+
+    
+// }
+
+// .title img {
+//     max-width: 10%;
+//     width: 10%;
+//     float:left;
+//     transform: rotate(-10deg); //girar imagen  
+//     margin-top: 40px; /* ajustar los valores para mover la imagen */
+//     flex-direction: row;
+
+// }
+

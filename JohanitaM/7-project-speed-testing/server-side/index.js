@@ -1,21 +1,9 @@
 const express = require('express');
-const fs = require('fs');
+const router = require('./router');
 
 const app = express();
 const port = 3001;
 
-// API GET
-app.get('/', (req, res) => {
-  // llamar a la bd (json)
+app.use(router);
 
-  fs.readFile('../data/inicio.json', (err, data) => {
-    if (err) {
-      res.statusCode(400);
-    } else {
-      const elDato = JSON.parse(data);
-      res.status(200).send(elDato);
-    }
-  });
-});
-
-app.listen(port, () => console.log('Servidor corriendo... 😀'));
+app.listen(port, () => console.log(`Servidor corriendo puerto ${port} ... 😀`));
