@@ -1,0 +1,30 @@
+{
+  "title_page": "Reflextest",
+  "header": {
+    "logo": "url",
+    "title": "Reflextest",
+    "menu": [
+      { "name": "Inicio", "url": "./index.html" },
+      { "name": "Estadísticas", "url": "./pages/stats/index.html" }
+    ]
+  },
+  "main": {
+    "card": {
+      "title": "¡Datazo!",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat saepe laboriosam possimus praesentium provident ut rerum, illo eius illum, fugiat amet laborum temporibus? Ullam alias nemo sed fugit non hic!"
+    },
+    "form": {
+      "textInput": {
+        "placeholder": "Nickname",
+        "id": "username"
+      },
+      "selectInput": {
+        "placeholder": "Choose your time",
+        "id": "time"
+      },
+      "submit": {
+        "text": "Ir a jugar"
+      }
+    }
+  }
+}
