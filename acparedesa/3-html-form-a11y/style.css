@@ -1,0 +1,46 @@
+main {
+  width: 75vh;
+  height: 75vh;
+  background-color: rgb(111, 178, 246);
+  margin: 7.5vh auto;
+  position: relative;
+  border: 0.5vh solid #270145;
+}
+
+h1 {
+  font-size: 7vh;
+  color: blueviolet;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(1, 1, 150);
+  font-size: 2.3vh;
+  text-align: justify;
+  margin: 2vh;
+}
+
+form {
+  color: rgb(111, 0, 180);
+  margin: 2vh;
+  background-color: rgb(195, 212, 255);
+  border: 0.5vh solid #270145;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1vh;
+}
+
+.format {
+  margin: 0;
+  font-size: 2vh;
+  font-family: cursive;
+}
+
+.button {
+  color: blueviolet;
+  width: 20%;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
