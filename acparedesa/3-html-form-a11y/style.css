@@ -1,32 +1,39 @@
+body {
+  background-color: #e5e5f7;
+  background: linear-gradient(135deg, rgba(126, 8, 186, 0.3333333333) 25%, transparent 25%) -15px 0/30px 30px, linear-gradient(225deg, #7e08ba 25%, transparent 25%) -15px 0/30px 30px, linear-gradient(315deg, rgba(126, 8, 186, 0.3333333333) 25%, transparent 25%) 0px 0/30px 30px, linear-gradient(45deg, #7e08ba 25%, #e5e5f7 25%) 0px 0/30px 30px;
+}
+
 main {
   width: 75vh;
   height: 75vh;
   background-color: rgb(111, 178, 246);
-  margin: 7.5vh auto;
+  margin: 12.5vh auto;
   position: relative;
-  border: 0.5vh solid #270145;
+  border: 0.5vh solid #003668;
+  box-sizing: border-box;
 }
 
 h1 {
   font-size: 7vh;
-  color: blueviolet;
+  color: rgb(70, 2, 134);
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(1, 1, 150);
+  color: #003668;
   font-size: 2.3vh;
   text-align: justify;
-  margin: 2vh;
+  margin: 5vh;
+  margin-bottom: -2vh;
 }
 
 form {
   color: rgb(111, 0, 180);
   margin: 2vh;
   background-color: rgb(195, 212, 255);
-  border: 0.5vh solid #270145;
+  border: 0.5vh solid #003668;
   border-radius: 5px 5px 5px 5px;
   padding: 1vh;
 }
@@ -39,8 +46,8 @@ form {
 
 .button {
   color: blueviolet;
-  width: 20%;
-  display: flex;
+  width: 15%;
+  margin-left: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
