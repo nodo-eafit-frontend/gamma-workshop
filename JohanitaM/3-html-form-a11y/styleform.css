@@ -131,25 +131,59 @@ article {
 }
 
 body {
-  background-image: url "https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg";
-  background-image: url(./assets/img/003-wood-melamine-subttle-pattern-background-pat.jpg);
+  background-image: url "https://awesomewallpapers.files.wordpress.com/2010/08/stratosphere.jpg";
+  background-image: url(./assets/img/stratosphere.jpg);
   background-size: cover;
-  margin: 30px;
+  margin: 20px;
   box-sizing: border-box;
   background-position: 0, 0, 10px, 10px;
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.picture {
+  display: flex;
+  right: 60;
+  transform: translate(-40%, -40%);
+  max-width: 50px;
+  margin: auto;
+  width: 50px;
+  float: left;
+  right: 30;
+  margin-top: 40px; /* ajustar los valores para mover la imagen */
+}
+
+.title {
+  position: relative;
+  display: flex;
+}
+.title__parrafo {
+  flex-direction: row;
+  font-size: 11.5vh;
+  font-family: "Open Sans", sans-serif;
+  display: inline-flex;
+  left: 10;
+  align-items: center;
+  transform: translate(-158%, -30%);
 }
 
 .form {
-  display: inline-block;
-  background-color: aliceblue;
+  position: relative;
+  font-size: 3vh;
+  padding: auto;
+  border-radius: 20px;
+  width: 32vw;
+  height: auto;
+  width: 38vw;
+  margin: auto;
+  background-color: rgb(252, 252, 252);
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #0e0e10;
-  width: 90%;
-  max-width: 400px;
-  padding: 4.5em 3em;
-  border-radius: 10px;
+  box-shadow: 4px 5px 0px 4px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=styleform.css.map */

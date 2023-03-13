@@ -4,69 +4,86 @@
 
 
 body {
-        background-image: url ('https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg');
-        background-image: url(./assets/img/003-wood-melamine-subttle-pattern-background-pat.jpg);
+        background-image: url ('https://awesomewallpapers.files.wordpress.com/2010/08/stratosphere.jpg');
+        background-image: url(./assets/img/stratosphere.jpg);
         background-size: cover;
-        margin: 30px;
+        margin: 20px;
         box-sizing: border-box;
         background-position: 0, 0, 10px, 10px;
         display: flex;
         font-family: $font-alternate;
         min-height: 100vh;
         flex-direction: column;
+        display: flex;
     
       
 }
 
-// .form {
-//     display: inline-flex;
-//     background-color:aliceblue;
-//     color: $color-primary;
-//     width: 90%;
-//     max-width: 400px;
-//     padding: 4.5em 3em;
-//     border-radius: 10px;
-//     background-image: url(./assets/img/pexels-mudassir-ali-2680270.jpg);
-//     position:relative;
-//     font-size: $font-size-m;
-//     // font-family: $font-alternate;
-    // margin-top: 150px;
-    // padding:5vh;
-    // box-shadow: $shadow-form;
-    // border-radius: 5px;
-    // border: solid 2px #999;
-    // position: absolute;
-    // top: 30%;
-    // left: 30%;
-    //  transform: translate(-50%, -50%);
-    //  width: 280px;
+.picture {
+    display:flex;
    
-    
- 
+    right: 60;
+        //como hacer que quede el logo antes del titulo en html css
+
+    transform: translate(-40%, -40%);
+    max-width: 50px;
+    margin: auto;
+    width: 50px;
+    float:left;
+    right: 30;
+   
+    // transform: rotate(-30); //girar imagen  
+    margin-top: 40px; /* ajustar los valores para mover la imagen */
+
+   
 
 }
 
-// .title {
-//     flex-direction: row;
-//     font-size: $font-size-xxl;
-//     font-family: $font-secundary;
-//     float:inherit; //como hacer que quede el logo antes del titulo en html css
-//     align-items:center; 
-//     top: 30%;
-//     left: 30%;
-//     right: 45%;
-//     transform: translate(50%, 50%);
+
+.title {
+    position: relative;
+    display: flex;
+
+
+
+    &__parrafo {
+        flex-direction: row;
+        font-size: $font-size-xxl;
+        font-family: $font-primary;
+        display:inline-flex;
+        left: 10;
+        align-items:center; 
+        transform: translate(-158%, -30%);
+    }
+
+}
+
+
+
+
+
+
+.form {
+   
+    position: relative;
+    font-size: $font-size-m;
+    padding:auto;
+    border-radius: 20px;
+    width: 32vw;
+    height: auto;
+    width: 38vw;
+    margin: auto;
+    background-color:rgb(252, 252, 252);
+    padding: 20px;
+    font-family: $font-alternate;
+    color:$color-primary;
+    box-shadow: $shadow-form;
+    
+}
+
+
 
     
-// }
 
-// .title img {
-//     max-width: 10%;
-//     width: 10%;
-//     float:left;
-//     transform: rotate(-10deg); //girar imagen  
-//     margin-top: 40px; /* ajustar los valores para mover la imagen */
-//     flex-direction: row;
 
-// }
 
