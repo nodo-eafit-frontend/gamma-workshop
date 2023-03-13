@@ -19,32 +19,23 @@ body {
       
 }
 
-.picture {
-    display:flex;
-   
-    right: 60;
-        //como hacer que quede el logo antes del titulo en html css
-
-    transform: translate(-40%, -40%);
-    max-width: 50px;
-    margin: auto;
-    width: 50px;
-    float:left;
-    right: 30;
-   
-    // transform: rotate(-30); //girar imagen  
-    margin-top: 40px; /* ajustar los valores para mover la imagen */
-
-   
-
-}
-
 
 .title {
     position: relative;
     display: flex;
 
 
+    &__picture {
+        right: 60;
+        transform: translate(-35deg, -35deg);
+        max-width: 50px;
+        margin: auto;
+        width: 50px;
+        float:left;
+        right: 30;
+        transform: rotate(-15deg); //girar imagen  
+        margin-top: 40px;
+    }
 
     &__parrafo {
         flex-direction: row;
@@ -53,7 +44,8 @@ body {
         display:inline-flex;
         left: 10;
         align-items:center; 
-        transform: translate(-158%, -30%);
+        transform: translate(-158%, -0%);
+        justify-content: center;
     }
 
 }
@@ -67,7 +59,7 @@ body {
    
     position: relative;
     font-size: $font-size-m;
-    padding:auto;
+    // padding:auto;
     border-radius: 20px;
     width: 32vw;
     height: auto;
@@ -75,11 +67,78 @@ body {
     margin: auto;
     background-color:rgb(252, 252, 252);
     padding: 20px;
-    font-family: $font-alternate;
     color:$color-primary;
     box-shadow: $shadow-form;
+
+
+    &__warning {
+        font-family: $font-primary;
+        font-size: $font-size-l;
+        font-weight: bold;
+        justify-content: center;
+    }
+
+   
+}
+
+
+.information {
+    font-family: $font-secundary;
+    font-size: $font-size-m;
+    font-weight: bolder;
     
 }
+.complete{
+    width: 100%;
+    background-color:rgba(210, 236, 241, 0.5);
+    padding: 9px;
+    margin-bottom:16px;
+    border: 1px solid rgb(83, 83, 83);
+    font-family: $font-secundary;
+    font-size: 18px;
+    color:$color-third;
+    font-weight: 100;
+    border-radius: 5px;
+}
+
+
+.options {
+    position: relative;
+    border: 1px solid rgb(83, 83, 83);
+    margin-left: 7px;
+    padding: 2px;
+    border: 2px solid #696767;
+    border-radius: 4px;
+    margin-top: 2.5px;
+
+   &__sp {
+    font-weight: bold;
+    text-align: center;
+    text-align:right;
+   }
+
+   &__button {
+     text-decoration: underline rgb(31, 31, 32);
+     color:darkblue
+
+   }
+
+}
+
+.send {
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color:rgba(10, 54, 97,0.5);
+    border-radius: 10px;
+    padding: 12px;
+    color: $color-primary;
+    background-color: rgb(157, 180, 136);
+    margin: 16px o;
+    font-size: 18px;
+    
+}
+
+
 
 
 

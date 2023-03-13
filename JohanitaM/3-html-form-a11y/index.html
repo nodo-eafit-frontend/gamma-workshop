@@ -12,71 +12,87 @@
 <body>
    
     <h1 class="title">
-        <img class="picture" src="./assets/img/img form.png" alt="puntero"> 
+        <img class="title__picture" src="./assets/img/img form.png" alt="puntero"> 
           <p class="title__parrafo">LITISNET</p>           
         </h1>   
-       
-    <section class="form">
-        
-        <div class="form__general">
+        <div class="form">
            
             <h2 class="form__warning">
-                <p>Aviso destacado de profesionales</p>
+                <p>Aviso destacado de profesionales</p><br>
             </h2>
            
             <form action="#" method="get">
-                <section class="form__one">
-                    <label for="name" class="container__label">Nombre</label>
-                    <input type="text" id="name" class="container__input" placeholder="name">
+                <section>
+                    <label class="information" for="name" class="container__label">Nombres</label>
+                    <input class="complete" type="text" id="name" placeholder="name">
                   
 
-                    <label for="Apellidos" class="container__label">Apellidos</label>
-                    <input type="text" name="last-name" class="container__input" placeholder="last-name">
+                    <label class="information" for="Apellidos" class="container__label">Apellidos</label>
+                    <input class="complete" type="text" name="last-name" placeholder="last-name">
 
-                    <label for="Dirección" class="container__label">Dirección</label>
-                    <input type="text" name="adress" class="container__input" placeholder="adress">
+                    <label class="information" for="Dirección" class="container__label">Dirección</label>
+                    <input class="complete" type="text" name="adress" placeholder="adress">
 
-                    <label for="Telefono" class="container__label">Telefono</label>
-                    <input type="number" name="phone-number" class="container__input" placeholder="phone-number">
+                    <label class="information" for="Telefono" class="container__label">Telefono</label>
+                    <input class="complete" type="number" name="phone-number" placeholder="phone-number">
 
-                    <label for="Email" class="container__label">Email</label>
-                    <input type="email" name="email-adress" class="container__input" placeholder="ejemplo@hotmail.com">
+                    <label class="information" for="Email" class="container__label">Email</label>
+                    <input class="complete" type="email" name="email-adress" placeholder="ejemplo@hotmail.com">
 
-                    <label for="web">Sitio web</label>
-                    <input type="url" name="url" class="container__input" placeholder="https://www.example.com/">
+                    <label class="information" for="web">Sitio web</label>
+                    <input class="complete" type="url" name="url" placeholder="https://www.example.com/">
 
-                    <label for="Descripcion" class="container__label">Descripcion del estudio</label>
-                    <input type="text" name="descripcion" class="container__input" placeholder="escriba brevemente sus estudios">
+                    <label class="information" for="Descripcion" class="container__label">Descripcion del estudio</label>
+                    <input class="complete" type="text" name="descripcion" placeholder="escriba brevemente sus estudios">
 
-                    <label for="Diferencias" class="container__label">¿Que los hace diferentes?</label>
-                    <input type="text" name="diferencia" class="container__input" placeholder="Diferencias">
+                    <label class="information" for="Diferencias" class="container__label">¿Que los hace diferentes?</label>
+                    <input class="complete" type="text" name="diferencia" placeholder="Diferencias">
 
-                    <label for="Fecha inicio" class="container__label">fecha de inicio de actividades</label>
-                    <input type="date" name="date" class="container__input" placeholder="Fecha inicio de actividades">
+                    <label class="information" for="Fecha inicio" class="container__label">Fecha de inicio de actividades</label>
+                    <input class="complete" type="date" name="date" placeholder="Fecha inicio de actividades">
                    
-                    <label for="Cantidad de socios" class="container__label">Cantidad de socios</label>
-                    <input type="number" name="numero de socios" class="container__input" placeholder="Numero de socios">
+                    <label class="information" for="Cantidad de socios" class="container__label">Cantidad de socios</label>
+                    <input class="complete" type="number" name="numero de socios" placeholder="Numero de socios">
 
-                    <label for="Numero de abogados" class="container__label">Cantidad de abogados</label> 
-                    <input type="number" name="numero de abogados" class="container__input" placeholder="Numero de abogados">
+                    <label class="information" for="Numero de abogados" class="container__label">Cantidad de abogados</label> 
+                    <input class="complete" type="number" name="numero de abogados" placeholder="Numero de abogados">
                 </section>
-                <section class="form__two">
-                    <span><strong>Marque su(s) especialida(des)</strong> </span> <br>  
-                    <input type="checkbox" name="Administrativo" value="1">Administrativo<br>
-                    <input type="checkbox" name="Civil" value="2">Civil<br>
-                    <input type="checkbox" name="Comercial" value="3">Comercial<br>
-                    <input type="checkbox" name="Derechos humanos" value="4">Derechos humanos<br>
-                    <input type="checkbox" name="Familia" value="6">Familia<br>
-                    <input type="checkbox" name="Internacional" value="7">Internacional<br>
-                    <input type="checkbox" name="Laboral" value="8">Laboral<br>
-                    <input type="checkbox" name="Obras" value="9">Obras<br>
-                    <input type="checkbox" name="Penal" value="10">Penal<br>
-                    <a class="button" href="#">Agregar opción</a>
-                </section>
-               
+
+
+                <fieldset class="options"> 
+                    <legend class="options__sp">Marque su(s) especialida(des)</legend><br>
+                    <div>
+                        <input type="checkbox" name="Administrativo" value="1">Administrativo<br>
+                        <input type="checkbox" name="Civil" value="2">Civil<br>
+                        <input type="checkbox" name="Comercial" value="3">Comercial<br>
+                        <input type="checkbox" name="Derechos humanos" value="4">Derechos humanos<br>
+                        <input type="checkbox" name="Familia" value="6">Familia<br>
+                        <input type="checkbox" name="Internacional" value="7">Internacional<br>
+                        <input type="checkbox" name="Laboral" value="8">Laboral<br>
+                        <input type="checkbox" name="Obras" value="9">Obras<br>
+                        <input type="checkbox" name="Penal" value="10">Penal<br>
+                        <a class="options__button" href="#">Agregar opción</a>
+                    </div>
+                  </fieldset>
+
+                <section > 
+                       <span ></span>
+                      
+                        
+                       
+                       
+                </section>                 
+                    <input class="send" type="submit" value="Enviar datos" formtarget="#">
             </form>
-          </div>
-          <input type="submit" value="Enviar datos">
+            <div>
+           
+                  
+              
+           
+            </div>
+            
+        </div>
+         
 </body>
 </html>
 
