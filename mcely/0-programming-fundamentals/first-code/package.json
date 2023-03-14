@@ -11,6 +11,7 @@
     "start:co": "node --watch conditionals.js",
     "start:loop": "node --watch loops.js",
     "start:loop-ao": "node --watch loops-arrays-objects.js",
+    "start:class": "node --watch class.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marvin Cely",
