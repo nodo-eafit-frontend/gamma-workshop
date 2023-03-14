@@ -141,7 +141,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   flex-direction: column;
-  display: flex;
 }
 
 .title {
@@ -168,6 +167,8 @@ body {
   align-items: center;
   transform: translate(-158%, 0%);
   justify-content: center;
+  color: brown;
+  font-weight: bold;
 }
 
 .form {
@@ -211,17 +212,16 @@ body {
 
 .options {
   position: relative;
-  border: 1px solid rgb(83, 83, 83);
+  border: 3px solid rgb(83, 83, 83);
   margin-left: 7px;
   padding: 2px;
   border: 2px solid #696767;
-  border-radius: 4px;
-  margin-top: 2.5px;
 }
 .options__sp {
   font-weight: bold;
+  font-style: #0e0e10;
   text-align: center;
-  text-align: right;
+  vertical-align: baseline;
 }
 .options__button {
   text-decoration: underline rgb(31, 31, 32);
@@ -229,6 +229,8 @@ body {
 }
 
 .send {
+  position: relative;
+  display: inline-block;
   margin-top: 20px;
   margin-left: 15px;
   background-color: rgba(10, 54, 97, 0.5);
@@ -236,7 +238,6 @@ body {
   padding: 12px;
   color: #0e0e10;
   background-color: rgb(157, 180, 136);
-  margin: 16px o;
   font-size: 18px;
 }
 

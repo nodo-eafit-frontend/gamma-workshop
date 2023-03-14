@@ -14,8 +14,8 @@
     <h1 class="title">
         <img class="title__picture" src="./assets/img/img form.png" alt="puntero"> 
           <p class="title__parrafo">LITISNET</p>           
-        </h1>   
-        <div class="form">
+    </h1>   
+    <div class="form">
            
             <h2 class="form__warning">
                 <p>Aviso destacado de profesionales</p><br>
@@ -58,41 +58,49 @@
                     <input class="complete" type="number" name="numero de abogados" placeholder="Numero de abogados">
                 </section>
 
-
+                
                 <fieldset class="options"> 
                     <legend class="options__sp">Marque su(s) especialida(des)</legend><br>
-                    <div>
-                        <input type="checkbox" name="Administrativo" value="1">Administrativo<br>
-                        <input type="checkbox" name="Civil" value="2">Civil<br>
-                        <input type="checkbox" name="Comercial" value="3">Comercial<br>
-                        <input type="checkbox" name="Derechos humanos" value="4">Derechos humanos<br>
-                        <input type="checkbox" name="Familia" value="6">Familia<br>
-                        <input type="checkbox" name="Internacional" value="7">Internacional<br>
-                        <input type="checkbox" name="Laboral" value="8">Laboral<br>
-                        <input type="checkbox" name="Obras" value="9">Obras<br>
-                        <input type="checkbox" name="Penal" value="10">Penal<br>
-                        <a class="options__button" href="#">Agregar opción</a>
-                    </div>
-                  </fieldset>
+                    
 
-                <section > 
-                       <span ></span>
-                      
-                        
-                       
-                       
-                </section>                 
-                    <input class="send" type="submit" value="Enviar datos" formtarget="#">
-            </form>
-            <div>
+                        <div>
+                            <fieldset>
+                                <input id="admin" type="checkbox" name="administrativo" value="admin"/>
+                                <label for="admin">Administrativo</label>
+
+                                <input id="civ" type="checkbox" name="Civil" value="civ"/>
+                                <label for="civ">Civil</label>
+
+                                <input id="com" type="checkbox" name="Comercial" value="com"/>
+                                <label for="com">Comercial</label>
+
+                                <input id="ddh" type="checkbox" name="Derechos humanos" value="ddh"/>
+                                <label for="ddh">Derechos humanos</label>
+
+                                <input id="fam" type="checkbox" name="Familia" value="fam"/>
+                                <label for="fam">Familia</label>
+
+
+                                <input id="int" type="checkbox" name="Internacional" value="int"/>
+                                <label for="int">Internacional</label>
+
+                                <input id="lab" type="checkbox" name="Laboral" value="lab"/>
+                                <label for="lab">Laboral</label>
+
+                                <input id="ob" type="checkbox" name="Obras" value="ob"/>
+                                <label for="ob">Obras</label>
+
+                                <input id="pen" type="checkbox" name="Penal" value="pen"/>
+                                <label for="pen">Penal</label>
+
+                                <a class="options__button" href="#">Agregar opción</a>
+                            </fieldset>
+                        </div>
+                    
+                </form>
+                <input class="send" type="submit" value="Enviar datos" formtarget="#">
            
-                  
-              
-           
-            </div>
-            
-        </div>
-         
+      
 </body>
 </html>
 
