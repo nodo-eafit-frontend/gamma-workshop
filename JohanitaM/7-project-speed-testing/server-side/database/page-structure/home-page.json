@@ -1,0 +1,23 @@
+{
+  "title_page": "Reflextest | Juego",
+  "header": {
+    "title": "Prueba de reflejos"
+  },
+  "board": [
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" },
+    { "key": "1" }
+  ],
+  "scoring": {
+    "label_rest_time": "Tiempo restante",
+    "label_max_speed": "Velocidad máxima",
+    "label_score": "Puntaje actual"
+  },
+  "version": "1.0.0"
+}
