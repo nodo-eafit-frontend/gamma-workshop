@@ -8,6 +8,7 @@
     "start:re": "node --watch operacion-relacional.js",
     "start:bs": "node --watch block-scope.js",
     "start:co": "node --watch conditionals.js",
+    "start:class": "node --watch class.js",
 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
