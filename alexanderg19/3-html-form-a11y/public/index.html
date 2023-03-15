@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cuéntanos de ti</title>
+</head>
+
+<body class="content">
+    <main class="content__main">
+        <header >
+            <h1 class="content__title">#AlaskaStore</h1>
+            <p class="content__parrafo">
+                Rellena el siguiente formulario y haznos saber qué cuáles de nuestros productos te han gustado más. Muchos premios te esperan!
+            </p>
+        </header><br />
+
+        <form class="form">
+            <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder=" " required />
+                <label for="name" class="form__label">1. Nombre completo</label>
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+                <input type="date" id="date" required placeholder=" " />
+                <label for="date" class="form__label--select">2. Fecha de nacimiento</label>
+            </div>
+
+            <div class="form__group">
+                <select id="sex" class="form__select" required>
+                    <option value="genero" disabled selected>
+                        Selecciona tú género
+                    </option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="sex" class="form__label--select">3. Genero</label>
+            </div>
+
+            <div class="form__group">
+                <select class="form__select" required>
+                    <option value="selecciona" class="form__option" disabled selected>Prefijo:</option>
+                    <option value="+57" class="form__option">+57</option>
+                    <option value="+55" class="form__option">+55</option>
+                    <option value="+54" class="form__option">+54</option>
+                    <option value="+56" class="form__option">+56</option>
+                </select>
+                <input type="number" id="tel" placeholder="3207509238" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <label for="tel" class="form__label--select">4. Número de télefono</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="email" class="form__input" placeholder=" " required />
+                <label for="email" class="form__label">5. Correo electrónico</label>
+                <span class="form__line"></span>
+            </div>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="direccion" class="form__input" placeholder=" " required/>
+                <label for="direccion" class="form__label">6. Ciudad y país de residencia</label>
+                <select  class="form__select">
+                    <option value="pais" class="form__option" disabled selected>Seleccione su país</option>
+                    <option value="colombia" class="form__option">Colombia</option>
+                    <option value="argentina" class="form__option">Argentina</option>
+                    <option value="brasil" class="form__option">Brasil</option>
+                    <option value="Chile" class="form__option">Chile</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label for="text" class="form__label">¿Cuál o cuáles de nuestros productos te han marcado?</label><br/><br/>
+                <textarea id="text" class="form__textarea" cols="80" rows="10" maxlength="175" required></textarea>   
+            </div>
+            
+            <input type="submit" class="form__submit" value="Enviar respuestas">
+        </form> 
+    </main>
+</body>
+
+</html>
