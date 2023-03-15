@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#8b6bc7 0.75px, transparent 0.75px), radial-gradient(#8b6bc7 0.75px, #e5e5f7 0.75px);
+  background-size: 30px 30px;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+.content__main {
+  background-color: white;
+  width: 80vh;
+  height: 130vh;
+  margin: 5vh auto;
+  padding: 4rem 2em;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 15px 3px rgba(118, 63, 219, 0.66);
+  -moz-box-shadow: 10px 10px 15px 3px rgba(118, 63, 219, 0.66);
+  box-shadow: 10px 10px 15px 3px rgba(118, 63, 219, 0.66);
+  position: relative;
+}
+.content__title {
+  font-size: 3.5em;
+  font-weight: bolder;
+  color: #8b6bc7;
+}
+.content__parrafo {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.form {
+  margin-top: 2em;
+  display: grid;
+  gap: 2.5em;
+  position: relative;
+}
+.form__group {
+  position: relative;
+  --color: #000000;
+}
+.form__input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1em;
+  padding: 0.5em 0.25em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #868484;
+  font-family: "Roboto", sans-serif;
+}
+.form__label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.form__label--select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-18px);
+  cursor: pointer;
+}
+.form__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+}
+.form__input:focus + .form__label, .form .form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.9);
+  transform-origin: left top;
+  color: #3866f2;
+}
+.form__textarea {
+  font-family: "Roboto", sans-serif;
+}
+.form__submit {
+  background-color: #AA77FF;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+  width: 50%;
+}
+.form__input:focus ~ .form__line, .form .form__input:not(:placeholder-shown) + .form__line {
+  transform: scale(1);
+}
+.form__input:not(:placeholder-shown) {
+  color: #4d4646;
+}
+
+/*# sourceMappingURL=style.css.map */
