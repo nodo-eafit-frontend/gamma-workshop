@@ -76,6 +76,6 @@ class Rectangle extends Square {
   }
 }
 
-const cicle = new Rectangle('red', 10, 20);
+const figure = new Rectangle('red', 10, 20);
 
-console.log(cicle.getArea());
+console.log(figure.getArea());

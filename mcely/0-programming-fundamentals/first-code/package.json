@@ -13,8 +13,12 @@
     "start:loop-ao": "node --watch loops-arrays-objects.js",
     "start:class": "node --watch class.js",
     "start:class-h": "node --watch class-hierarchy.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:ts-compile": "npx tsc -w class-hierarchy-2.ts",
+    "start:ts": "node --watch class-hierarchy-2.js"
   },
   "author": "Marvin Cely",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }
