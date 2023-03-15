@@ -10,7 +10,9 @@
       "start:bs": "node --watch block-scope.js",
       "start:co": "node --watch conditionals.js",
       "start:loop": "node --watch loop.js",
+      "start:class": "node --watch class.js",
       "start:loop-ao": "node --watch loops-arrays-object.js",
+      "start:ch": "node --watch class-hierarchy.js",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "JohanitaM",

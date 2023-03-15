@@ -148,26 +148,19 @@ body {
   display: flex;
 }
 .title__picture {
-  right: 60;
-  transform: translate(-35deg, -35deg);
+  transform: translate(30%);
   max-width: 50px;
   margin: auto;
-  width: 50px;
-  float: left;
-  right: 30;
-  transform: rotate(-15deg);
-  margin-top: 40px;
+  width: auto;
+  margin-block-start: 19px;
+  transform: translate(-60%);
 }
 .title__parrafo {
-  flex-direction: row;
   font-size: 11.5vh;
   font-family: "Open Sans", sans-serif;
-  display: inline-flex;
-  left: 10;
-  align-items: center;
-  transform: translate(-158%, 0%);
+  transform: translate(-148%);
   justify-content: center;
-  color: brown;
+  color: darkorange;
   font-weight: bold;
 }
 
@@ -211,6 +204,7 @@ body {
 }
 
 .options {
+  display: block;
   position: relative;
   border: 3px solid rgb(83, 83, 83);
   margin-left: 7px;
@@ -239,6 +233,30 @@ body {
   color: #0e0e10;
   background-color: rgb(157, 180, 136);
   font-size: 18px;
+  cursor: pointer;
+  transform: translate(15%);
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 12px;
+  background-color: white;
+  border: 1px solid rgb(12, 11, 11);
+}
+
+input[type=checkbox]:checked {
+  margin-left: 12px;
+  width: 1rem;
+  height: 1rem;
+  background-color: green;
+  border: 1px solid rgb(12, 11, 11);
 }
 
 /*# sourceMappingURL=styleform.css.map */
