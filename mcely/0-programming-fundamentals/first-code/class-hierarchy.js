@@ -15,30 +15,32 @@ class Figure {
 }
 
 class Circle extends Figure {
-  #radius = undefined;
-  _color = undefined;
+  _radius;
 
   constructor(color, radius) {
-    this.#radius = radius;
     super(color);
+    this._radius = radius;
   }
 
   getArea() {
-    return (Math.PI * this.#radius) ** 2;
+    return (Math.PI * this._radius) ** 2;
   }
 
   getInfo() {
-    return `${this.#radius} ${this._color}`;
+    return `${this._radius} ${this._color}`;
   }
 }
 
 class Square extends Figure {
   #side = undefined;
-  _color = undefined;
 
   constructor(color, side) {
-    this.#side = side;
     super(color);
+    this.#side = side;
+  }
+
+  get side() {
+    return this.#side;
   }
 
   getArea() {
@@ -47,31 +49,33 @@ class Square extends Figure {
 }
 
 class Ellipse extends Circle {
-  #side = undefined;
-  _color = undefined;
+  _radius2;
 
-  constructor(color, side) {
-    this.#side = side;
-    super(color);
+  constructor(color, radius, radius2) {
+    super(color, radius);
+    this._radius2 = radius2;
   }
 
   getArea() {
-    return this.#side ** 2;
+    return Math.PI * this._radius * this._radius2;
   }
 }
 
 class Rectangle extends Square {
-  #side = undefined;
-  _color = undefined;
+  #width;
+  #height;
 
-  constructor(color, side) {
-    this.#side = side;
-    super(color);
+  constructor(color, width, height) {
+    super(color, width);
+    this.#width = super.side;
+    this.#height = height;
   }
 
   getArea() {
-    return this.#side ** 2;
+    return this.#width * this.#height;
   }
 }
 
-const cicle = new Circle();
+const cicle = new Rectangle('red', 10, 20);
+
+console.log(cicle.getArea());
