@@ -9,7 +9,6 @@ body {
         background-size: cover;
         margin: 20px;
         box-sizing: border-box;
-        background-position: 0, 0, 10px, 10px;
         display: flex;
         font-family: $font-alternate;
         min-height: 100vh;
@@ -22,39 +21,31 @@ body {
 
 .title {
     position: relative;
-    display: flex;
-   
+    display:flex;
     
 
 
-    &__picture {
-        transform: translate(30%);
+        &__picture {
+            transform: translate(30%);
+            max-width: 50px;
+            margin: auto;
+            width: auto;
+            margin-block-start: 19px;
+            transform: translate(-60%);
+        }
 
-        max-width: 50px;
-        margin: auto;
-        width: auto;
-        margin-block-start: 19px;
-        transform: translate(-60%);
-    }
+        &__parrafo {
+        
+        
+            font-size: $font-size-xxl;
+            font-family: $font-primary;
+            transform: translate(-148%);
+            justify-content: center;
+            color:darkorange;
+            font-weight: bold;
 
-    &__parrafo {
-       
-     
-        font-size: $font-size-xxl;
-        font-family: $font-primary;
-        transform: translate(-148%);
-        justify-content: center;
-        color:darkorange;
-        font-weight: bold;
-
-    }
-
+        }
 }
-
-
-
-
-
 
 .form {
    
@@ -71,12 +62,12 @@ body {
     box-shadow: $shadow-form;
 
 
-    &__warning {
-        font-family: $font-primary;
-        font-size: $font-size-l;
-        font-weight: bold;
-        justify-content: center;
-    }
+        &__warning {
+            font-family: $font-primary;
+            font-size: $font-size-l;
+            font-weight: bold;
+            justify-content: center;
+        }
 
    
 }
@@ -111,34 +102,29 @@ body {
     padding: 2px;
     border: 2px solid #696767;
 
-    &__sp {
-        font-weight: bold;
-        font-style: $color-primary;
-        text-align: center;
-        vertical-align: baseline;
-        
-    }
+        &__sp {
+            font-weight: bold;
+            font-style: $color-primary;
+            text-align: center;
+            vertical-align: baseline;
+        }
 
-    &__button {
-        text-decoration: underline rgb(31, 31, 32);
-        color:darkblue
-
-
-    }
+        &__button {
+            text-decoration: underline rgb(31, 31, 32);
+            color:darkblue
+        }
 
 }
 
 .send {
-    position: relative;
-    display: inline-block;
+    // position: relative;
     margin-top: 20px;
     margin-left: 15px;
-    background-color:rgba(10, 54, 97,0.5);
     border-radius: 10px;
     padding: 12px;
     color: $color-primary;
     background-color: rgb(157, 180, 136);
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     transform: translate(15%);
 
@@ -167,12 +153,6 @@ input[type="checkbox"]:checked {
     height: 1rem;
     background-color: green;
     border: 1px solid rgb(12, 11, 11);
-
-    
 }
-
-
-
-    
 
 

@@ -136,7 +136,6 @@ body {
   background-size: cover;
   margin: 20px;
   box-sizing: border-box;
-  background-position: 0, 0, 10px, 10px;
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
@@ -223,16 +222,13 @@ body {
 }
 
 .send {
-  position: relative;
-  display: inline-block;
   margin-top: 20px;
   margin-left: 15px;
-  background-color: rgba(10, 54, 97, 0.5);
   border-radius: 10px;
   padding: 12px;
   color: #0e0e10;
   background-color: rgb(157, 180, 136);
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   transform: translate(15%);
 }
