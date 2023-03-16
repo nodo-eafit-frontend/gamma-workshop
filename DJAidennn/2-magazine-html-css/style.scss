@@ -1,4 +1,4 @@
-@import './assets/styles/';
+@import "./assets/styles/";
 
 body {
   background-color: lightgray;
@@ -21,7 +21,7 @@ body {
   &__title {
     font-family: $font-primary;
     font-size: $font-size-xl;
-    text-transform: uppercase;;
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -33,7 +33,6 @@ body {
     font-family: $font-primary;
     font-size: $font-size-xl;
     text-align: start;
-
   }
 
   &__model {
@@ -43,7 +42,6 @@ body {
     height: 85%;
     z-index: $z-indez-model;
   }
-
 }
 
 .content {
@@ -52,23 +50,17 @@ body {
   position: relative;
   display: inline-flex;
   line-height: 100px;
-  
 
   &__left {
-
-    font-size: $font-size-s ;
+    font-size: $font-size-s;
     position: absolute;
-    
   }
 
   &__right {
     align-items: end;
     font-size: $font-size-s;
-    position: absolute; 
+    position: absolute;
     margin-left: 43vh;
-    
-    
-      
   }
 
   &__bottom {
@@ -78,23 +70,17 @@ body {
     content: 18.5vh 4.5vh 4vh 5vh;
     position: absolute;
     display: none;
-       
-    
-    
-   
   }
 
   &__wording {
     line-height: 1.5;
     &--red {
       color: $color-secondary;
-      font-family: 'Golos Text', sans-serif;
+      font-family: "Golos Text", sans-serif;
       font-size: $font-size-m;
       text-transform: uppercase;
       font-weight: 40%;
       align-items: end;
-      
-      
     }
 
     h1 {
@@ -118,9 +104,4 @@ body {
   height: 10vh;
   left: 75%;
   top: 85%;
-
-
-  
 }
-
-

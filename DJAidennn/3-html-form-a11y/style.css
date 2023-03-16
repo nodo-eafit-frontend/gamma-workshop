@@ -1,0 +1,86 @@
+/**
+  Fuentes:
+  - https://www.youtube.com/watch?v=Foieq2jTajE&t=405s
+  - https://github.com/eduardofierropro/Reset-CSS
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  background-color: rgb(187, 241, 182);
+  background-size: cover;
+  justify-content: center;
+  background-image: url(https://r-marcas.com/wp-content/uploads/2015/05/Fondo-Formularios.gif);
+}
+
+.form {
+  width: 100vh;
+  height: 147vh;
+  margin: 4.5vh auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 15px 12px 0px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  background-color: rgb(225, 228, 225);
+}
+.form .form__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5vh;
+  color: #000000;
+}
+.form .form__userinfo {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5vh;
+}
+.form .form__first {
+  display: flex;
+  align-items: flex-start;
+  font-size: 2.5vh;
+}
+.form .form__radiobuttons {
+  display: flex;
+  justify-content: end;
+  font-family: "Lato", sans-serif;
+  align-items: space-between;
+  flex-flow: column;
+  font-size: 2.5vh;
+}
+.form .form__second--content {
+  display: flex;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 2.5vh;
+}
+.form .form__radiobuttons2 {
+  display: flex;
+  justify-content: none;
+  font-family: "Lato", sans-serif;
+  align-items: space-between;
+  flex-direction: column;
+  font-size: 2.5vh;
+}
+.form .form__third {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5vh;
+  justify-content: center;
+}
+.form .form__fourth {
+  display: flex;
+  align-items: baseline;
+}
+.form .form button {
+  size: 4.5vh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+@import "./assets/styles/index.scss";
+
+body {
+  background-color: rgb(187, 241, 182);
+  background-size: cover;
+  justify-content: center;
+  background-image:url(https://r-marcas.com/wp-content/uploads/2015/05/Fondo-Formularios.gif);
+}
+
+.form {
+  width: 100vh;
+  height: 147vh;
+  margin: 4.5vh auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $shadow-form;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+
+  background-color: rgb(225, 228, 225);
+
+  .form__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    
+
+    font-family: $font-primary;
+    font-size: 3.5vh;
+    color: $color-primary;
+  }
+
+  .form__userinfo {
+    display: flex;
+    align-items:  start;
+    justify-content: center;
+    font-family: $font-primary;
+    font-size: 2.5vh;
+  }
+
+  .form__first {
+    display: flex;
+    align-items: flex-start;
+    font-size: 2.5vh;
+  }
+
+  .form__radiobuttons {
+    display: flex;
+    justify-content: end;
+    font-family: $font-secondary;
+    align-items: space-between;
+    flex-flow: column;
+    font-size: 2.5vh;
+  }
+
+  .form__second--content {
+    display: flex;
+    align-items: center;
+    font-family: $font-secondary;
+    font-size: 2.5vh;
+  }
+
+  .form__radiobuttons2 {
+    display: flex;
+    justify-content: none;
+    font-family: $font-secondary;
+    align-items: space-between;
+    flex-direction: column;
+    font-size: 2.5vh;
+  }
+
+  .form__third {
+    display: flex;
+    font-family: $font-primary;
+    font-size: 2.5vh;
+    justify-content: center;
+  }
+
+  .form__fourth {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form button {
+    size: 4.5vh;
+
+
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey form</title>
+  </head>
+  <body>
+    <main class="form">
+      <header class="form__title">
+        <h1>computer survey form</h1>
+      </header>
+      <section class="form__userinfo">
+        <form>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="textfield" />
+          <label for="age-group">Age group</label>
+          <input id="age-group" type="text" name="textfield" />
+          <label for="gender">Gender</label>
+          <input id="gender" type="text" name="textfield" />
+        </form>
+      </section>
+      <section class="form__radiobuttons">
+        <div class="form__first">
+          <h4 id="form__first" class="bold">
+            1.How often you use your computer?
+          </h4>
+        </div>
+        <div class="form__first--content">
+          <input id="less_than_30_minutes" type="radio" name="computer_time" />
+          <label for="less_than_30_minutes">Less than 30 minutes</label>
+          <input id="2_hours" type="radio" name="computer_time" />
+          <label for="2_hours">2 hours</label>
+          <input id="more_than_3_hours" type="radio" name="computer_time" />
+          <label for="more_than_3_hours">More than 3 hours</label>
+          <input id="1_hour" type="radio" name="computer_time" />
+          <label for="1_hour">1 hour</label>
+          <input id="3_hours" type="radio" name="computer_time" />
+          <label for="3_hours">3 hours</label>
+        </div>
+        <div class="form__second">
+          <h4 id="form__second">2.What do you use the computer for?</h4>
+        </div>
+        <div class="form__second--content">
+          <input id="internet" type="radio" name="computer_use" />
+          <label for="internet">Internet</label>
+          <input id="work" type="radio" name="computer_use" />
+          <label for="work">Work</label>
+          <input id="personal" type="radio" name="computer_use" />
+          <label for="personal">Personal</label>
+          <input id="learning" type="radio" name="computer_use" />
+          <label for="learning">Learning</label>
+          <input id="gaming" type="radio" name="computer_use" />
+          <label for="gaming">Gaming</label>
+        </div>
+      </section>
+      <section class="form__userinfo2">
+        <div class="form__third">
+          <h4>
+            3.What are the three most common topic of conversation amongst your
+            friends?
+          </h4>
+        </div>
+        <form>
+          <label for="optionA">a.</label>
+          <input id="optionA" type="text" />
+          <label for="optionB">b.</label>
+          <input id="optionB" type="text" />
+          <label for="optionC">c.</label>
+          <input id="optionC" type="text" />
+        </form>
+      </section>
+      <section class="form__radiobuttons2">
+        <div class="form__fourth">
+          <h4>4.How many hours a day would you spend on internet?</h4>
+        </div>
+        <div class="form__fourth--content">
+          <input id="internet" type="radio" name="computer_use" />
+          <label for="internet">Internet</label>
+          <input id="work" type="radio" name="computer_use" />
+          <label for="work">Work</label>
+          <input id="personal" type="radio" name="computer_use" />
+          <label for="personal">Personal</label>
+          <input id="learning" type="radio" name="computer_use" />
+          <label for="learning">Learning</label>
+          <input id="gaming" type="radio" name="computer_use" />
+          <label for="gaming">Gaming</label>
+        </div>
+      </section>
+      <button>Enviar</button>
+    </main>
+  </body>
+</html>
