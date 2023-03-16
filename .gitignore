@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 node_modules   
 
 # //ignora todas las dependencias de node_module para que no se guarde en el git  hub
+=======
+node_modules
+.vscode
+>>>>>>> 2f96427df2c38ded8279784cbf111d6e75e04ee1

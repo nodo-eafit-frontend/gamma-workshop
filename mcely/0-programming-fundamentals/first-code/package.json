@@ -1,0 +1,24 @@
+{
+  "name": "first-code",
+  "version": "1.0.0",
+  "description": "javascript examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "start:or": "node --watch operacion-relacional.js",
+    "start:oa": "node --watch operacion-aritmetica.js",
+    "start:bs": "node --watch block-scope.js",
+    "start:co": "node --watch conditionals.js",
+    "start:loop": "node --watch loops.js",
+    "start:loop-ao": "node --watch loops-arrays-objects.js",
+    "start:class": "node --watch class.js",
+    "start:class-h": "node --watch class-hierarchy.js",
+    "start:ts-compile": "npx tsc -w class-hierarchy-2.ts",
+    "start:ts": "node --watch class-hierarchy-2.js"
+  },
+  "author": "Marvin Cely",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
