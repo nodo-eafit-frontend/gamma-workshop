@@ -23,7 +23,7 @@ class Circle extends Figure {
   }
 
   getArea() {
-    return (Math.PI * this._radius) ** 2;
+    return (Math.PI * this._radius  ** 2);
   }
 
   getInfo() {
