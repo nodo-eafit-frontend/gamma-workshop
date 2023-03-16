@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "git.ignoreLimitWarning": true
 }
+=======
+  "livePreview.defaultPreviewPath": "/mcely/6-speed-testing/index.html"
+}
+>>>>>>> 5f1fd714bf241d32842210dc3e76058f13f0c3f9
