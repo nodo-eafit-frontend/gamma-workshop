@@ -1,14 +1,14 @@
 {
-  "name": "server-side",
+  "name": "reflex-test",
   "version": "1.0.0",
-  "description": "this organize the data info",
+  "description": "Server side of my app",
   "main": "index.js",
   "scripts": {
     "start": "node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "server-side"
+    "server"
   ],
   "author": "Alexander Gallo Lopez",
   "license": "ISC",

@@ -1,13 +1,9 @@
-const express = require('express')
+const express = require('express');
+const router = require('./router');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3001;
 
-// API
-app.get('/', (req, res) => {
-  // Aquí obtener info del json cualquier cosa
-});
+app.use(router);
 
-app.listen(port, () => {
-  console.log('Servidor corriendo 🔥')
-})
+app.listen(port, () => console.log(`Servidor corriendo puerto ${port} ... 😀`));
