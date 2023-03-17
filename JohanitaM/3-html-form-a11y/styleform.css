@@ -133,34 +133,35 @@ article {
 body {
   background-image: url "https://awesomewallpapers.files.wordpress.com/2010/08/stratosphere.jpg";
   background-image: url(./assets/img/stratosphere.jpg);
-  background-size: cover;
-  margin: 20px;
-  box-sizing: border-box;
-  display: flex;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
-  flex-direction: column;
 }
 
 .title {
   position: relative;
   display: flex;
-}
-.title__picture {
-  transform: translate(30%);
   max-width: 50px;
   margin: auto;
   width: auto;
-  margin-block-start: 19px;
-  transform: translate(-60%);
+  justify-content: space-between;
 }
-.title__parrafo {
-  font-size: 11.5vh;
+.title__picture {
+  display: inline-flex;
+  max-width: 100px;
+  margin: auto;
+  width: auto;
+  justify-content: center;
+  font-size: 9vh;
   font-family: "Open Sans", sans-serif;
-  transform: translate(-148%);
+  transform: translate(-30%);
   justify-content: center;
   color: darkorange;
   font-weight: bold;
+}
+.title__picture img {
+  margin: 20px;
+  max-width: 40px;
+  margin: auto;
+  width: auto;
+  transform: translate(-30%);
 }
 
 .form {
@@ -222,6 +223,7 @@ body {
 }
 
 .send {
+  display: flex;
   margin-top: 20px;
   margin-left: 15px;
   border-radius: 10px;
@@ -230,7 +232,6 @@ body {
   background-color: rgb(157, 180, 136);
   font-size: 20px;
   cursor: pointer;
-  transform: translate(15%);
 }
 
 input[type=checkbox] {

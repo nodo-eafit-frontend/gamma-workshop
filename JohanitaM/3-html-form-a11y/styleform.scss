@@ -1,51 +1,50 @@
 @import './assets/styles-form';
 
-
-
-
 body {
         background-image: url ('https://awesomewallpapers.files.wordpress.com/2010/08/stratosphere.jpg');
         background-image: url(./assets/img/stratosphere.jpg);
-        background-size: cover;
-        margin: 20px;
-        box-sizing: border-box;
-        display: flex;
-        font-family: $font-alternate;
-        min-height: 100vh;
-        flex-direction: column;
-     
-        
-      
 }
+
 
 
 .title {
     position: relative;
     display:flex;
-    
+    max-width: 50px;
+    margin: auto;
+    width: auto;
+    justify-content: space-between;
+
+   
+
 
 
         &__picture {
-            transform: translate(30%);
-            max-width: 50px;
+            display: inline-flex;
+            max-width: 100px;
             margin: auto;
             width: auto;
-            margin-block-start: 19px;
-            transform: translate(-60%);
-        }
-
-        &__parrafo {
-        
-        
+            justify-content: center;
             font-size: $font-size-xxl;
             font-family: $font-primary;
-            transform: translate(-148%);
+            transform: translate(-30%);
             justify-content: center;
             color:darkorange;
             font-weight: bold;
 
+            img {
+                margin:20px;
+                max-width: 40px;
+                margin: auto;
+                width: auto;
+                transform: translate(-30%);
+                
+            }
         }
-}
+    }
+
+        
+
 
 .form {
    
@@ -117,7 +116,7 @@ body {
 }
 
 .send {
-    // position: relative;
+    display: flex;
     margin-top: 20px;
     margin-left: 15px;
     border-radius: 10px;
@@ -126,7 +125,6 @@ body {
     background-color: rgb(157, 180, 136);
     font-size: 20px;
     cursor: pointer;
-    transform: translate(15%);
 
 }
 
@@ -154,5 +152,6 @@ input[type="checkbox"]:checked {
     background-color: green;
     border: 1px solid rgb(12, 11, 11);
 }
+
 
 
