@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gloock&family=Karla:wght@300&family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@400;500&family=Gloock&family=Karla:wght@300&family=Marck+Script&family=Mr+Dafoe&family=Satisfy&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@400;500&family=Gloock&family=Karla:wght@300&family=Marck+Script&family=Merienda+One&family=Mr+Dafoe&family=Satisfy&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@400;500&family=Gloock&family=Karla:wght@300&family=Marck+Script&family=Merienda+One&family=Mr+Dafoe&family=Satisfy&family=Yellowtail&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@400;500&family=Gloock&family=Karla:wght@300&family=Marck+Script&family=Merienda+One&family=Mr+Dafoe&family=Satisfy&family=Ultra&family=Yellowtail&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Damion&family=Dancing+Script:wght@400;500&family=Gloock&family=Karla:wght@300&family=Marck+Script&family=Merienda+One&family=Mr+Dafoe&family=Oleo+Script&family=Satisfy&family=Ultra&family=Yellowtail&family=Zeyada&display=swap");
+body {
+  background-image: url(./assets/fondo.jpg);
+  background-size: cover;
+  background-repeat: round;
+}
+
+.magazine {
+  max-width: 60vw;
+  min-width: 20vw;
+  height: 50hv;
+  margin: 10vh auto;
+  background-image: url(assets/fondo2.jpg);
+  background-size: cover;
+  position: relative;
+  box-shadow: 15px 35px 20px -7px;
+}
+
+.magazine_title {
+  font-size: 200px;
+  color: #ea0284;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-inline: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.span1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  position: absolute;
+  left: 1400px;
+  top: 200px;
+}
+
+.modelo {
+  position: absolute;
+  top: -30px;
+  left: 5px;
+  height: 100%;
+  z-index: 1;
+}
+
+.contenido {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h {
+  font-size: 150px;
+  font-family: Mr Dafoe;
+  position: absolute;
+  color: black;
+  top: -450px;
+  left: 40px;
+}
+
+.le1 {
+  color: #ea0284;
+  font-size: 35px;
+}
+
+.le2 {
+  background-color: orangered;
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Merienda One;
+}
+
+.le3 {
+  color: black;
+  font-family: cursive;
+}
+
+.let1 {
+  font-family: Zeyada;
+  font-size: 80px;
+  color: #ea0284;
+  position: relative;
+  top: -200px;
+  left: 300;
+}
+
+.cir1 {
+  background-color: orangered;
+  border-radius: 1000px;
+  height: 260px;
+  width: 260px;
+  position: absolute;
+  font-family: Ultra;
+  left: 1220px;
+  top: 180px;
+}
+
+/*.circulo {
+  background-color: orangered;
+  border-radius: 1000px;
+  height: 250px;
+  width: 250px;
+  top: -300px;
+  position: relative;
+
+}*/
+.let2 {
+  position: relative;
+  top: -300px;
+  color: black;
+  left: 200px;
+  font-size: 40px;
+}
+
+.letra {
+  font-size: 25px;
+  top: -20px;
+  position: relative;
+  left: 330px;
+  color: black;
+}
+
+.letra03 {
+  font-size: 150px;
+  font-family: Damion;
+  position: relative;
+  right: 380px;
+  top: 300px;
+  color: white;
+}
+
+.letra001 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 150px;
+  color: orangered;
+  right: 380px;
+  top: 100px;
+}/*# sourceMappingURL=estilos.css.map */
