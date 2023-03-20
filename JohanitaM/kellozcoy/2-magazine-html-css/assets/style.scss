@@ -1,0 +1,37 @@
+
+@import url(../img/style/);
+
+body{
+    background-color:aquamarine;
+    background-size: cover;
+    background-repeat: round;
+
+    
+}
+
+.magazine {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+
+    &__title{
+        font-size: large;
+    }
+
+}
+.content{
+
+    &__left-side{
+    
+    }
+    &__right-side{
+
+    }
+    &__wording{
+        &--#8d296e 
+    }
+
+}
+
+
+
