@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleform.css">
+    <title>Formulario de verificacón</title>
+   
+
+</head>
+<body>
+   
+    <h1 class="title">
+        <img class="title__picture" src="./assets/img/right-24837_640.webp" alt="puntero"> 
+          <p class="title__parrafo">LITISNET</p>           
+    </h1>   
+    <div class="form">
+           
+            <h2 class="form__warning">
+                <p>Aviso destacado de profesionales</p><br>
+            </h2>
+           
+            <form action="#" method="get">
+                <section>
+                    <label class="information" for="name" class="container__label">Nombres</label>
+                    <input class="complete" type="text" id="name" placeholder="name" >
+                  
+
+                    <label class="information" for="Apellidos" class="container__label">Apellidos</label>
+                    <input class="complete" type="text" name="last-name" placeholder="last-name">
+
+                    <label class="information" for="Dirección" class="container__label">Dirección</label>
+                    <input class="complete" type="text" name="adress" placeholder="adress">
+
+                    <label class="information" for="Telefono" class="container__label">Telefono</label>
+                    <input class="complete" type="number" name="phone-number" placeholder="phone-number">
+
+                    <label class="information" for="Email" class="container__label">Email</label>
+                    <input class="complete" type="email" name="email-adress" placeholder="ejemplo@hotmail.com">
+
+                    <label class="information" for="web">Sitio web</label>
+                    <input class="complete" type="url" name="url" placeholder="https://www.example.com/">
+
+                    <label class="information" for="Descripcion" class="container__label">Descripcion del estudio</label>
+                    <input class="complete" type="text" name="descripcion" placeholder="escriba brevemente sus estudios">
+
+                    <label class="information" for="Diferencias" class="container__label">¿Que los hace diferentes?</label>
+                    <input class="complete" type="text" name="diferencia" placeholder="Diferencias">
+
+                    <label class="information" for="Fecha inicio" class="container__label">Fecha de inicio de actividades</label>
+                    <input class="complete" type="date" name="date" placeholder="Fecha inicio de actividades">
+                   
+                    <label class="information" for="Cantidad de socios" class="container__label">Cantidad de socios</label>
+                    <input class="complete" type="number" name="numero de socios" placeholder="Numero de socios">
+
+                    <label class="information" for="Numero de abogados" class="container__label">Cantidad de abogados</label> 
+                    <input class="complete" type="number" name="numero de abogados" placeholder="Numero de abogados">
+                </section>
+
+                
+                <fieldset class="options"> 
+                    <legend class="options__sp">Marque su(s) especialida(des)</legend><br>
+                    
+
+                        <div>
+                            <fieldset>
+                                <input id="admin" type="checkbox" name="administrativo" value="admin" checked/>Administrativo<br>
+                              
+                                <input id="civ" type="checkbox" name="Civil" value="civ"/>Civil<br>
+                              
+
+                                <input id="com" type="checkbox" name="Comercial" value="com"/>Comercial<br>
+                               
+
+                                <input id="ddh" type="checkbox" name="Derechos humanos" value="ddh"/>Derechos humanos<br>
+                    
+                                <input id="fam" type="checkbox" name="Familia" value="fam"/>Familia<br>
+                            
+                                <input id="int" type="checkbox" name="Internacional" value="int"/>Internacional<br>
+                                
+
+                                <input id="lab" type="checkbox" name="Laboral" value="lab"/>Laboral<br>
+                            
+                                <input id="ob" type="checkbox" name="Obras" value="ob"/>Obras<br>
+                        
+                                <input id="pen" type="checkbox" name="Penal" value="pen"/>Penal<br>
+                             
+                                <a class="options__button" href="#">Agregar opción</a>
+                            </fieldset>
+                        </div>
+                </form>
+                <input class="send" type="submit" value="Enviar datos">    
+</body>
+</html>
+
+
