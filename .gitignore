@@ -5,4 +5,8 @@ node_modules
 =======
 node_modules
 .vscode
+<<<<<<< HEAD
 >>>>>>> 2f96427df2c38ded8279784cbf111d6e75e04ee1
+=======
+.angular
+>>>>>>> 343c19ea26cca7dbacc56f064f1e850d8f520721
