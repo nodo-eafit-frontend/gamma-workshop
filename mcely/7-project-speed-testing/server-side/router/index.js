@@ -16,6 +16,8 @@ router.get('/', (req, res) => {
       }, 5000);
     }
   });
+  //res.setHeader("Access-Control-Allow-Origin" , "*")
+
 });
 
 module.exports = router;
