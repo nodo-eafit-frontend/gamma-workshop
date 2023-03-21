@@ -4,7 +4,7 @@ import { MainService } from 'src/app/services/main.service';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
   main: any;
