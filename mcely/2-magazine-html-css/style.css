@@ -136,6 +136,11 @@ article {
   align-self: inherit;
 }
 
+.magazine__title h1 {
+  background-color: #0257ea;
+  box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.4);
+}
+
 body {
   background-image: url("./assets/img/wood_background.jpg");
   background-size: cover;
@@ -195,9 +200,13 @@ body {
 }
 .content__wording--pink {
   color: #ea0284;
+  background-color: #ea0257;
+  box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.4);
 }
 .content__wording p {
   font-size: 2.8vh;
+  background-color: #ea0257;
+  box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.4);
 }
 .content__wording b:first-child {
   font-size: 5.6vh;

@@ -1,5 +1,15 @@
 @import './assets/styles';
 
+%new-property {
+  background-color: $color-info;
+  box-shadow: $shadow-magazine;
+}
+
+@mixin other-properties($back-ground: $color-info) {
+  background-color: $back-ground;
+  box-shadow: $shadow-magazine;
+}
+
 body {
   background-image: url('./assets/img/wood_background.jpg');
   background-size: cover;
@@ -31,6 +41,7 @@ body {
 
   &__title h1 {
     line-height: 0.8;
+    @extend %new-property;
   }
 
   &__title span {
@@ -67,10 +78,13 @@ body {
     line-height: 1;
     &--pink {
       color: $color-secondary;
+      // @extend %new-property;
+      @include other-properties($color-warning);
     }
 
     p {
       font-size: 2.8vh;
+      @include other-properties($color-warning);
     }
 
     b:first-child {
