@@ -10,7 +10,10 @@ router.get('/', (req, res) => {
       res.statusCode(400);
     } else {
       const elDato = JSON.parse(data);
-      res.status(200).send(elDato);
+
+      setTimeout(() => {
+        res.status(200).send(elDato);
+      }, 5000);
     }
   });
 });
