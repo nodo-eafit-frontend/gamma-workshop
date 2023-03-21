@@ -48,7 +48,7 @@ const carro1 = new Car(Carro.color, Carro.logo, Carro.precio);
 
 console.log(carro1);
 
-carro1.setColor('#000');
+carro1.setColor('#86c6c6');
 carro1.precio = 75_000_000;
 
 console.log(carro1.showMainInfo());

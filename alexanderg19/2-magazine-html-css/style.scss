@@ -1,0 +1,163 @@
+@import "./assets/styles/";
+
+.magazine {
+  width: 60vh;
+  height: 85vh;
+  margin: 7.5vh auto;
+
+  background-image: url("https://v2r8c2i8.stackpathcdn.com/wp-content/uploads/2017/09/estadio-santiago-bernabeu-madri.jpg");
+  background-size: cover;
+  position: relative;
+
+  -webkit-box-shadow: 10px 14px 19px 5px rgba(0, 82, 158, 0.66);
+  -moz-box-shadow: 10px 14px 19px 5px rgba(0, 82, 158, 0.66);
+  box-shadow: 10px 14px 19px 5px rgba(0, 82, 158, 0.66);
+
+  &__title {
+    font-family: $font-secundary;
+    font-size: $font-size-primary;
+    color: white;
+    position: relative;
+    top: -5vh;
+
+    & span:first-child {
+      background-color: $color-background-text;
+      position: relative;
+      top: 8.2vh;
+      left: 2vh;
+    }
+
+    & span:nth-of-type(even) {
+      color: $color-secundary;
+      position: relative;
+      top: 5vh;
+      left: 39vh;
+    }
+
+    & h1 {
+      font-family: $font-primary;
+      font-size: 10vh;
+      text-align: center;
+      position: relative;
+      z-index: $z-index-primary;
+      text-shadow: -3px 4px 7px #2c87db;
+    }
+
+    & span:last-child {
+      background-color: $color-background-text;
+      position: absolute;
+      margin-left: 46vh;
+      margin-top: -22px;
+    }
+  }
+
+  &__model {
+    position: absolute;
+    height: 93%;
+    z-index: $z-index-primary;
+    top: 9vh;
+    left: 6vh;
+  }
+
+  &__footer {
+    font-family: $font-secundary;
+    font-size: $font-size-primary;
+    color: $color-secundary;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    z-index: $z-index-secundary;
+    width: 100%;
+    top: -15vh;
+  }
+}
+
+.content {
+  font-family: $font-secundary;
+  font-size: $font-size-secundary;
+  color: $color-secundary;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 2.5vh;
+  top: -5vh;
+  z-index: $z-index-secundary;
+  text-shadow: -3px 4px 7px #2c87db;
+
+  &__logo {
+    width: 30vh;
+    position: relative;
+    left: -6.5vh;
+    top: 4vh;
+  }
+
+  &__bar--code {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 8vh;
+    top: 38vh;
+    height: 29vh;
+  }
+
+  &__left {
+    position: relative;
+    top: -6vh;
+    line-height: 3.5vh;
+  }
+
+  &__right {
+    line-height: 4.3vh;
+    position: absolute;
+    left: 34vh;
+    top: 2vh;
+    text-align: end;
+    height: 60vh;
+  }
+
+  &__phrases {
+    position: relative;
+    top: 0.5vh;
+
+    & span:first-child {
+      background-color: $color-secundary;
+      color: $color-primary;
+      font-size: small;
+      text-shadow: none;
+      position: relative;
+      top: 1vh;
+    }
+
+    &--gray {
+      color: $color-tertiary;
+      font-size: $font-size-primary;
+      text-shadow: -3px 4px 2px $color-primary;
+      line-height: 2vh;
+      position: relative;
+      top: -1vh;
+    }
+
+    &--bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 48vh;
+      height: 20vh;
+      position: relative;
+      top: -2vh;
+    }
+
+    &--title {
+      font-family: $font-primary;
+      font-size: $font-size-alternative;
+      text-transform: uppercase;
+    }
+
+    &--list {
+      font-size: $font-size-primary;
+    }
+
+    &--white {
+      color: $color-primary;
+    }
+  }
+}
