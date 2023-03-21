@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 const homePagePath = './database/page-structure/home-page.json';
+const delay = 2000;
 
 router.get('/', (req, res) => {
   fs.readFile(homePagePath, (err, data) => {
@@ -13,7 +14,7 @@ router.get('/', (req, res) => {
 
       setTimeout(() => {
         res.status(200).send(elDato);
-      }, 5000);
+      }, delay);
     }
   });
 });

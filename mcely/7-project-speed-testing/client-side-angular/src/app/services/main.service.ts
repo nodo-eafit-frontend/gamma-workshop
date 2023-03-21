@@ -10,11 +10,16 @@ export class MainService {
 
   constructor(private http: HttpClient) {
     this.http.get(this.url).subscribe((response: any) => {
+      console.log('MainService response');
       this.response = response;
     });
   }
 
   get main(): any {
     return this.response.main;
+  }
+
+  get title(): string {
+    return this.response.title_page;
   }
 }

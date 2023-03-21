@@ -21,6 +21,7 @@ const App = (props) => {
   const [background, setBackground] = useState(styleBackground);
 
   useEffect(() => {
+    // Initialization
     console.log('Nací');
 
     const url = 'http://localhost:3001/';
@@ -32,9 +33,14 @@ const App = (props) => {
       });
 
     return () => {
+      // Destroy
       console.log('Morí X_X');
     };
   }, []);
+
+  useEffect(() => {
+    // Update
+  }, [background, saludo]);
 
   const handlerClick = (event) => {
     const newBackground = { backgroundColor: getRandomColor() };
