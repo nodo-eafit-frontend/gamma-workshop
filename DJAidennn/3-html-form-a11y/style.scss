@@ -16,10 +16,13 @@ body {
   align-items: center;
   box-shadow: $shadow-form;
   display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
+  flex-flow: row wrap;
+  border-radius: 30px;
+  
+  
 
-  background-color: rgb(225, 228, 225);
+  background-color: rgb(255, 255, 255);
+  
 
   .form__title {
     display: flex;
@@ -35,9 +38,7 @@ body {
   }
 
   .form__userinfo {
-    display: flex;
-    align-items:  start;
-    justify-content: center;
+    flex-flow: column-reverse;
     font-family: $font-primary;
     font-size: 2.5vh;
   }
@@ -80,14 +81,36 @@ body {
     justify-content: center;
   }
 
+  .form__userinfo2 {
+    position: relative;
+    align-items: end ;
+    font-family: $font-secondary;
+
+  
+  }
+
   .form__fourth {
     display: flex;
     align-items: baseline;
+    font-size: 2.5vh;
+    justify-content: center;
   }
 
-  .form button {
-    size: 4.5vh;
-
-
+  .btn-enviar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #428BCA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #317AF5;
+    }
+    
+    &:active {
+      background-color: #1F5CB6;
+    }
   }
 }
