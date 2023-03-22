@@ -1,7 +1,7 @@
-class FigureTS {  
-  protected color = String;  
+class FigureTS {
+  protected color = String;
 
-  constructor(color) { 
+  constructor(color) {
     this.color = color;
   }
 
@@ -14,16 +14,16 @@ class FigureTS {
   }
 }
 
-class Circle extends FigureTS {  
+class Circle extends FigureTS {
   protected radius = Number;
 
   constructor(color, radius) {
-    super(color);   
-    this._radius = radius;
+    super(color);
+    this.radius = radius;
   }
 
-  getArea() {
-    return (Math.PI * this.radius) ** 2;  
+  getArea(): number {
+    return (Math.PI * this.radius) ** 2;
   }
 
   getInfo() {
@@ -31,7 +31,7 @@ class Circle extends FigureTS {
   }
 }
 
-class Square extends FigureTS { 
+class Square extends FigureTS {
   private side : Number;
 
   constructor(color, side) {
@@ -62,17 +62,17 @@ class Ellipse extends Circle {
 }
 
 class Rectangle extends Square {
-  private width: number = 100;      
+  private width: number = 100;
   private height: number = 150;
 
   constructor(color, width, height) {
-    super(color, width);   
-    this.width = super.side; 
+    super(color, width);
+    this.width = super.side;
     this.height = height;
   }
 
   getArea() {
-    return this.width * this.height;  
+    return this.width * this.height;
   }
 }
 

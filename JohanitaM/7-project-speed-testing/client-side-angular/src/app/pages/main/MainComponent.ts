@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { MainService } from 'src/app/services/main.service';
-
+import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'app-main',
@@ -8,9 +7,15 @@ import { MainService } from 'src/app/services/main.service';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
-  main: any;
+  main: any = {};
 
   constructor(public mainService: MainService) {
     this.main = this.mainService.main;
   }
+
+  // Initialize
+
+  // Update
+
+  // Destroy
 }
