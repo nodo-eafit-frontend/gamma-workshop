@@ -1,81 +1,58 @@
 class FigureTS {
-  protected color = String;
+  constructor(protected color: string) {}
 
-  constructor(color) {
-    this.color = color;
+  getArea(): any {
+    return 'Not Available';
   }
 
-  getArea() {
-    return 'number';
-  }
-
-  getInfo() {
-    return 'number';
+  getInfo(): any {
+    return 'Not Available';
   }
 }
 
 class Circle extends FigureTS {
-  protected radius = Number;
-
-  constructor(color, radius) {
+  constructor(color: string, protected radius: number) {
     super(color);
-    this.radius = radius;
   }
 
   getArea(): number {
-    return (Math.PI * this.radius) ** 2;
+    return Math.PI * this.radius ** 2;
   }
 
-  getInfo() {
+  getInfo(): string {
     return `${this.radius} ${this.color}`;
   }
 }
 
 class Square extends FigureTS {
-  private side : Number;
-
-  constructor(color, side) {
+  constructor(color: string, protected side: number) {
     super(color);
-    this.side = side;
   }
 
-  get side() {
-    return this.side;
-  }
-
-  getArea() {
+  getArea(): number {
     return this.side ** 2;
   }
 }
 
 class Ellipse extends Circle {
-  protected radius2 = Number;
-
-  constructor(color, radius, radius2) {
+  constructor(color: string, radius: number, private radius2: number) {
     super(color, radius);
-    this._radius2 = radius2;
   }
 
-  getArea() {
-    return Math.PI * this._radius * this._radius2;
+  getArea(): number {
+    return Math.PI * this.radius * this.radius2;
   }
 }
 
 class Rectangle extends Square {
-  private width: number = 100;
-  private height: number = 150;
-
-  constructor(color, width, height) {
+  constructor(color: string, width: number, protected height: number) {
     super(color, width);
-    this.width = super.side;
-    this.height = height;
   }
 
-  getArea() {
-    return this.width * this.height;
+  getArea(): number {
+    return this.side * this.height;
   }
 }
 
-const figure = new Rectangle('red');
-
+const figure = new Ellipse('red', 10, 20);
 console.log(figure.getArea());

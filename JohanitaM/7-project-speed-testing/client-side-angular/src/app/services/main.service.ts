@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class MainService {
-  public response: any = {};
+  private response: any = {};
   private url: string = 'http://localhost:3001/';
 
 
