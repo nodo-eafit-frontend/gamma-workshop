@@ -1,5 +1,10 @@
 <main class="main-cotainer">
-  <p>main works!</p>
+  <app-card
+    title="{{ mainService.main?.card?.title }}"
+    description="{{ mainService.main?.card?.description }}"
+  ></app-card>
+
+  <h1>Ejemplo servicio</h1>
   <div *ngIf="mainService.main; else loading">
     {{ mainService.main | json }}
   </div>
