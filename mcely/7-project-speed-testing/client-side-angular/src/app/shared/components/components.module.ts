@@ -5,10 +5,16 @@ import { RouterModule } from '@angular/router';
 import { CardComponent } from './molecules/card/card.component';
 import { MaterialModule } from '../material.module';
 import { FooterComponent } from './organisms/footer/footer.component';
+import { FormComponent } from './molecules/form/form.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, MaterialModule],
-  exports: [MenuBarComponent, CardComponent, FooterComponent],
-  declarations: [MenuBarComponent, CardComponent, FooterComponent],
+  exports: [MenuBarComponent, CardComponent, FooterComponent, FormComponent],
+  declarations: [
+    MenuBarComponent,
+    CardComponent,
+    FooterComponent,
+    FormComponent,
+  ],
 })
 export class ComponentsModule {}
