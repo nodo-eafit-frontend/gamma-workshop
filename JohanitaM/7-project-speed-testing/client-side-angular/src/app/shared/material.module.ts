@@ -100,6 +100,3 @@ import { DialogModule } from '@angular/cdk/dialog';
   ],
 })
 export class MaterialModule {}
-
-
-
