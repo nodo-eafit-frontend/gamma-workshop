@@ -7,8 +7,6 @@ import { MaterialModule } from '../material.module';
 import { FooterComponent } from './organisms/footer/footer.component';
 import { FormComponent } from './molecules/form/form.component';
 
-
-
 @NgModule({
   imports: [CommonModule, RouterModule, MaterialModule],
   exports: [MenuBarComponent, CardComponent, FooterComponent, FormComponent],

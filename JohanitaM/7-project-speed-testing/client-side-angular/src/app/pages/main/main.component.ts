@@ -14,15 +14,16 @@ export class MainComponent implements OnInit, OnDestroy {
   }
 
   // Initialize
-  ngOnInit(): void {  //Metodo para iniciar
+  ngOnInit(): void {
     this.main = this.mainService.main;
     console.log('MainComponent -> ngOnInit', this.main);
   }
 
   // Update
- // ngOnChanges(changes: SimpleChanges): void {
+  // ngOnChanges(changes: SimpleChanges): void {
   //   console.log('MainComponent -> ngOnChanges', changes['main']);
   // }
+
   // Destroy
   ngOnDestroy(): void {
     console.log('Morí X_X');

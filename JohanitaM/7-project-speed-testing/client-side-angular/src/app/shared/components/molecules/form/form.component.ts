@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
- @Input() form: any;
+  @Input() form: any;
 
-  options: any [] = [
+  options: any[] = [
     { value: 'one', option: 'First Option :)' },
     { value: 'two', option: 'Second Option :(' },
     { value: '2', option: 'Third Option :(' },
