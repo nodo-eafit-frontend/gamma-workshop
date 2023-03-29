@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Reflextest';
+
+  constructor() {
+    setTimeout(() => {
+      this.changeName('Nuevo Titulo');
+    }, 3000);
+  }
+
+  changeName(newName: string): void {
+    this.title = newName;
+  }
 }
