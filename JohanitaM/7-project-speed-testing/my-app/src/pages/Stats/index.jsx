@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 
-export const Stats = () => {  //exporto home
-  return <div>Stats</div>;
+export const Stats = () => {  
+  return  (
+  <div>
+    <h1>Stats</h1>
+  </div>
+  );
 };
 

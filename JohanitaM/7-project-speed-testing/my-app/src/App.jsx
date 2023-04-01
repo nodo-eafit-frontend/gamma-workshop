@@ -1,11 +1,13 @@
-import { Home, Game, Stats } from "./pages";
+// import { Header } from "./components/organism";
+import { Outlet } from "react-router-dom";
+
+
 
 const App = () => {
   return  (
   <>
-  <Home />
-  <Game />
-  <Stats />
+  {/* <Header />   */}
+  <Outlet />
   </>
   );
 };

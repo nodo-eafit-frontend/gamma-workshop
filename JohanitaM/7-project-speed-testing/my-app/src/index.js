@@ -3,19 +3,36 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from './contexts';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import { Home, Game, Stats } from "./pages"
 
-const saludar = (nombre) => `Hola ${nombre}, ¿Cómo estás?`;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "game",
+        element: <Game />,
+      },
+      {
+        path: "stats",
+        element:  <Stats />,
+      },
+    ]
+  },
+]);
 
-let show = true;
-
-setTimeout(() => {
-  show = false;
-}, 5000);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App saludo={saludar('Leidy')} cedula={123412} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
