@@ -1,2 +1,5 @@
-<p>main works!</p>
-<div>{{mainservice.getMainInfo() | json}}</div>
+<main class="main-container">
+    <p>main works!</p>
+<div *ngIf="mainservice.main; else loading">{{mainservice.main | json}}</div>
+<ng-template #loading><mat-spinner></mat-spinner></ng-template>
+</main>

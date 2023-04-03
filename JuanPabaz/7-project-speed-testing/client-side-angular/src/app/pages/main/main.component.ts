@@ -9,6 +9,6 @@ import { MainService } from 'src/app/services/main.service';
 export class MainComponent {
   main: any
   constructor(public mainservice:MainService){
-    this.main=this.mainservice.getMainInfo();
+    this.main=this.mainservice.main;
   }
 }

@@ -5,15 +5,18 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class MainService {
-  private response:any;
-  private url:string = 'http://localhost:3001';
+  private response:any={};
+  private url:string = 'http://localhost:3001/';
   constructor(private http:HttpClient) { 
-   
+    this.response=this.http.get(this.url).subscribe((response:any)=>{
+      this.response=response;
+    });
+    
   }
 
-  getMainInfo():any{
+  get main():any{
 
-    this.http.get(this.url)
     return this.response.main;
+    
   }
 }
