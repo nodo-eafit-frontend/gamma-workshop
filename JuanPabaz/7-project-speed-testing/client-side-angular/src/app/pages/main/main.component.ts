@@ -11,4 +11,10 @@ export class MainComponent {
   constructor(public mainservice:MainService){
     this.main=this.mainservice.main;
   }
+
+  //initialize
+
+  //Update
+
+  //delete
 }

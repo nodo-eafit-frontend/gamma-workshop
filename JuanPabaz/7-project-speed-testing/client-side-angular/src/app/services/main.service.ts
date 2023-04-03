@@ -8,7 +8,8 @@ export class MainService {
   private response:any={};
   private url:string = 'http://localhost:3001/';
   constructor(private http:HttpClient) { 
-    this.response=this.http.get(this.url).subscribe((response:any)=>{
+    this.http.get(this.url).subscribe((response:any)=>{
+      console.log('MainService');
       this.response=response;
     });
     
@@ -17,6 +18,12 @@ export class MainService {
   get main():any{
 
     return this.response.main;
+    
+  }
+
+  get title():any{
+
+    return this.response.title_page;
     
   }
 }
