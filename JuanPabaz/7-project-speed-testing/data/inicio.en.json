@@ -1,0 +1,30 @@
+{
+    "title_page":"Reflextest",
+    "header":{
+        "logo":"url",
+        "title":"Reflextest",
+        "menu":[
+            {"name":"Home","url":"./index.html"},
+            {"name":"stats","url":"./pages/stats/index.html"}
+        ]
+    },
+    "main":{
+        "info":{
+            "title":"Datazo",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dignissimos consequatur molestiae aliquam fugit eius a deserunt repellat amet voluptatum veritatis debitis aliquid dolore atque, eos accusantium veniam sint expedita."
+        },
+        "form":{
+            "textInput":{
+                "placeholder":"Nickname",
+                "id":"username"
+            },
+            "selectInput":{
+                "placeholder":"choose your time",
+                "id":"time"               
+            },
+            "submit":{
+                "text":"ir a jugar"
+            }            
+        }
+    }     
+}

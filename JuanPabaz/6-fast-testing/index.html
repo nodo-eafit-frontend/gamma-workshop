@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./index.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./index.css"> -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,16 +15,30 @@
 </head>
 <body>
     <header>
-    <img src="./assets/logo.png" alt="Logotipo" />
-    <h1>Test de reflejos</h1>
-    <nav>
+    <!-- <img src="./assets/logo.png" alt="Logotipo" /> -->
+    
+    <!-- <nav> 
         <a href="./index.html">Inicio</a>
         <a href="./pages/stats/index.html">Estadísticas</a>
     </nav>
+    -->
     </header>
         <hr />
         
             <main class="container">
+                <h1>Ejemplo inputs</h1>
+                <form action="./pages/game/index.html" method="get">
+                    <label for="username"></label>
+                    <input type="text" placeholder="Nickname" name="user">
+                    <label for="select-time"></label>
+                    <select name="time" id="select-time" >
+                        <option selected="true" disabled>Elige tu tiempo...</option>
+                        <option value="30">30 seg</option>
+                        <option value="60">60 seg</option>
+                    </select>
+                    <input type="submit" value="Ir a jugar">
+                </form>
+                <!-- 
                 <div>Casa</div>
                 <div class="mi-clase">Bloque 2</div>
                 <div class="container__casa">Casa 1</div>
@@ -47,11 +61,13 @@
                 <span>Span 3</span>
                 <span>Span 4</span>
                 <span>Span 5</span>
+                -->
             </main>
-  <hr />
-  <footer>
-    <span>v1.0.0</span>
-  </footer>
+            
+        <hr />
+    <footer>
+        <span>v1.0.0</span>
+    </footer>
 </body>
 <script src="./index.js"></script>
 </html>

@@ -8,6 +8,10 @@
     "start:oa": "node --watch operacion-aritmetica.js",
     "start:bs": "node --watch block-scope.js",
     "start:co": "node --watch condicionales.js",
+    "start:con": "node --watch loops-arrays-objects.js",
+    "start:loops": "node --watch loops.js",
+    "start:class": "node --watch class.js",
+    "start:class:h": "node --watch class-hierarchy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JuanPabaz",
