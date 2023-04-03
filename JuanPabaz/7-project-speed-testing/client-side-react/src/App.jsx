@@ -20,8 +20,6 @@ const App= (props) => {
 
   const {saludo,id}=props;
 
-  
-
   const [background,setBackground]=React.useState(styleBackground);
   const handlerClick=(event)=>{
     setBackground({backgroundColor:getRandomColor()});
