@@ -1,0 +1,26 @@
+
+:root{
+    --primary-color: #2e2b26;
+}
+
+$font-stack: 'Lora', serif;
+body{
+    font-family: $font-stack;
+}
+
+.magazine{
+    background-image: url(../assets/img/fondo.png);
+    width: 60vh;
+    height: 80vh;
+    margin: 7.5vh auto;
+}
+
+.magazine img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    height: 64vh;
+    margin-top: 85px;
+
+}
