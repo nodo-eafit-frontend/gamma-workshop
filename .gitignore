@@ -1,5 +1,10 @@
 node_modules   
 .angular
+/pages
+/components
+/contexts
+/routes
+/services
 
 
 
