@@ -1,0 +1,16 @@
+<mat-form-field appearance="fill">
+  <mat-label>{{ form?.textInput?.placeholder }}</mat-label>
+  <input matInput />
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Select</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let item of options" value="{{ item.value }}">
+      {{ item.option }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div>
+  {{ form?.textInput?.placeholder | json }}
+</div>

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#8b6bc7 0.75px, transparent 0.75px),
+    radial-gradient(#8b6bc7 0.75px, #e5e5f7 0.75px);
+  background-size: 30px 30px;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+
+  &__main {
+    background-color: white;
+    width: 80vh;
+    height: 130vh;
+    margin: 5vh auto;
+    padding: 4rem 2em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 15px 3px rgba(118,63,219,0.66);
+    -moz-box-shadow: 10px 10px 15px 3px rgba(118,63,219,0.66);
+    box-shadow: 10px 10px 15px 3px rgba(118,63,219,0.66);
+    position: relative;
+  }
+
+  &__title {
+    font-size: 3.5em;
+    font-weight: bolder;
+    color: #8b6bc7;
+  }
+
+  &__parrafo {
+    font-size: 1.2em;
+    margin-top: .5em;
+    font-weight: 400;
+  }
+}
+
+.form {
+    margin-top: 2em;
+    display: grid;
+    gap: 2.5em;
+    position: relative;
+
+    &__group {
+        position: relative;
+        --color: #000000;
+    }
+
+    &__input {
+        width: 100%;
+        background: none;
+        color: #706c6c;
+        font-size: 1em;
+        padding: .5em .25em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #868484;
+        font-family: "Roboto", sans-serif;
+    }
+
+    &__label {
+        color: var(--color);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s;
+
+        &--select {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-18px);
+            cursor: pointer;
+        }
+    }
+
+    &__line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #3866f2;
+        transform: scale(0);
+        transform: left bottom;
+
+    }
+    
+
+    &__input:focus + .form__label, .form__input:not(:placeholder-shown) + .form__label {
+        transform: translateY(-12px) scale(.9);
+        transform-origin: left top ;
+        color: #3866f2;
+    }
+
+    &__textarea {
+        font-family: "Roboto", sans-serif;
+    }
+
+    &__submit {
+        background-color: #AA77FF;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        padding: .8em 0;
+        border: none;
+        border-radius: .5em;
+        width: 50%;
+    }
+
+    &__input:focus ~ .form__line, .form__input:not(:placeholder-shown) + .form__line {
+        transform: scale(1);
+    }
+
+    &__input:not(:placeholder-shown) {
+        color: #4d4646;
+    }
+}
+
