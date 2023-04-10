@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Zeyada&display=swap");
+
+html {
+  width: 200vh;
+  height: 205vh;
+  background-color: rgb(245, 229, 202);
+}
+
+body {
+  min-height: 100vh;
+  color: white;
+}
+
+main {
+  font-family: "Zeyada", cursive;
+  font-size: 3vh;
+  color: brown;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+p {
+  text-align: justify;
+}
+
+.newspaper {
+  font-family: "Babylonica", cursive;
+  font-size: 2vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 12vh;
+  color: rgb(55, 42, 0);
+}
+
+h2 {
+  font-size: 8vh;
+  color: rgb(55, 42, 0);
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 5vh;
+  text-align: center;
+  color: rgb(49, 17, 1);
+}
+
+#line {
+  border-color: rgb(55, 42, 0);
+}
+
+.edition {
+  font-size: 3.5vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.capital {
+  float: left;
+  width: 12vh;
+  height: 12vh;
+  margin: 1vh;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.topContainer {
+  column-count: 3;
+}
+
+.bottomContainer {
+  column-count: 2;
+}
+
+p {
+  color: rgb(38, 20, 0);
+}

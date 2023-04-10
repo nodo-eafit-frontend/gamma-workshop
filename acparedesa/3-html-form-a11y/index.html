@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Agenda tu cita</h1>
+        <p>
+          Si quieres visitar nuestro local agenda tu visita, estaremos felices
+          de atenderte 😀. Estamos ubicados en la Cl.33 # 89-34 Centro Comercial
+          Las ciclas.
+        </p>
+        <br />
+      </header>
+
+      <form>
+        <label for="fname">Nombre completo:</label><br />
+        <input type="text" id="fname" placeholder="Nombre" required />
+        <input type="text" id="fname" placeholder="Apellidos" required /><br />
+        <label for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="ejemplo@gmail.com"
+          required
+        /><br />
+        <label for="birthday">Fecha de nacimiento:</label>
+        <input type="date" id="birthday" required /><br />
+        <label for="phone">Celular:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="311-3111111"
+          pattern="[0-9]{3}-[0-9]{7}"
+          required
+        />
+        <p class="format">Formato: 311-3111111</p>
+        <label for="booking">Fecha de la visita:</label>
+        <input type="date" id="booking" required /><br />
+        <label for="appt">Hora deseada:</label>
+        <input type="time" id="appt" name="appt" required /><br /><br />
+      </form>
+      <input class="button" type="submit" value="Enviar" />
+    </main>
+  </body>
+</html>

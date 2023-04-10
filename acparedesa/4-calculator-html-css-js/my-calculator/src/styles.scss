@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: black;
+}
+
+.resultOperation {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: (244, 0, 150);
+}
+
+.operation {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .btnPosDivs {
+    display: none;
+  }
+}

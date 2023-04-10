@@ -1,0 +1,40 @@
+.container input {
+  background: rgb(0, 0, 0);
+  color: rgb(244, 164, 209);
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  border: 1px dashed whitesmoke;
+  margin: 2px;
+  font-size: x-large;
+
+  &:hover {
+    color: rgb(244, 0, 150);
+    font-weight: bold;
+  }
+}
+
+.full {
+  border: 10px solid palevioletred;
+  margin: 2px;
+  padding: 12px;
+  border-radius: 20px;
+  background-image: url(../assets/img/fondo5.jpg);
+}
+
+input[type="text"] {
+  color: white;
+  text-align: right;
+}
+
+.scroll {
+  height: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.card {
+  margin-top: 22px;
+  background-color: pink;
+  border: 1px dashed whitesmoke;
+}
