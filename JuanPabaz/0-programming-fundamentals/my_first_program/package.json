@@ -12,6 +12,7 @@
     "start:loops": "node --watch loops.js",
     "start:class": "node --watch class.js",
     "start:class:h": "node --watch class-hierarchy.js",
+    "start:class:hts": "node --watch class-hierarchy2.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JuanPabaz",

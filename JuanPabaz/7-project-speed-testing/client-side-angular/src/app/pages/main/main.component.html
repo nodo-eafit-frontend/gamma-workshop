@@ -1,5 +1,12 @@
 <main class="main-container">
-    <p>main works!</p>
-<div *ngIf="this.main; else loading">{{this.main | json}}</div>
+<app-card title="{{mainservice.main.card.title}}" description="lorem ipsum">
+    
+</app-card>
+
+<h1>Ejemplo servicio</h1>
+<div *ngIf="this.mainservice.main; else loading">
+    {{mainservice.main | json}}
+</div>
 <ng-template #loading><mat-spinner></mat-spinner></ng-template>
+
 </main>
