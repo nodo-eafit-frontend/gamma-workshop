@@ -1,11 +1,5 @@
 node_modules   
 .angular
-/pages
-/components
-/contexts
-/routes
-/services
-
 
 
 # //ignora todas las dependencias de node_module para que no se guarde en el git  hub
