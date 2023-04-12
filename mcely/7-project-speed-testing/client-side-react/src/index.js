@@ -1,21 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "./contexts";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 
-const saludar = (nombre) => `Hola ${nombre}, ¿Cómo estás?`;
+import { Home, Game, Stats } from "./pages";
 
-let show = true;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "game",
+        element: <Game />,
+      },
+      {
+        path: "stats",
+        element: <Stats />,
+      },
+    ],
+  },
+]);
 
-setTimeout(() => {
-  show = false;
-}, 5000);
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App saludo={saludar('Daniel')} cedula={123412} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
