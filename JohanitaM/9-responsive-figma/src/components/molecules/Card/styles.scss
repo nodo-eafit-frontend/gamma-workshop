@@ -1,0 +1,25 @@
+.card {
+  background: #b9b7b7;
+  color: #000000;
+  font-size: 20px;
+  padding: 1.6rem;
+  margin-right: 1.4rem;
+  text-align: center;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: $screens-min-width) {
+  .card {
+    margin-right: 1.4rem;
+  }
+}
+
+@media screen and (min-width: $tablet-max-width) {
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+
