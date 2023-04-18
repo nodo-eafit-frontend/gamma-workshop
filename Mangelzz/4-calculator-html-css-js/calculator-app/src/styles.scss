@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://th.bing.com/th/id/R.b3a1baf7483b0ab6ee99856bcc878393?rik=cLCPOtyTKSqYuQ&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.resultOperation{
+    margin-top: -30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(58, 220, 235);
+}
+
+.operation{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .btnPosDivs {
+        display: none;
+    }
+}
