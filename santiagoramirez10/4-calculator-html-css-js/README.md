@@ -1,11 +1,5 @@
-### I calculate that you must calculate a calculator code 🧮
-Choose one of them!
-- Scientific Calculator
-- Simple Calculator
+Scientific calculator made with HTML, CSS and JavaScript.
 
-Remember connect:
-- HTML to <script> Javascript
-- HTML to <styles> CSS
+Imitated calculator: https://www.laclavedinamica.com/wp-content/uploads/2020/01/calculadora-cientifica-fx-350ms-casio.jpg
 
-From document you can control everything
-- [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+<img src="https://github.com/nodo-eafit-frontend/gamma-workshop/blob/feature/santiagoramirez10/santiagoramirez10/4-calculator-html-css-js/images/preview.png"> 

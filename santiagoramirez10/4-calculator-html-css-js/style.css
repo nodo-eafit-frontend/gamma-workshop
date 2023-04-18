@@ -1,0 +1,160 @@
+:root {
+    --bg-color: #212429;
+    --cont-color: #505E818B;
+    --black: #000000;
+    --grey: #A5B1C4;
+    --white: #FFFFFF;
+    --display: #86B297;
+    --btn-action: #B74D6C;
+  }
+  body {
+      background-color: var(--bg-color);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+  }
+    .turn-on-off {
+      visibility: hidden;
+    }
+    .field-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p {
+      color: var(--white);
+    }
+    .field-name span {
+      color: var(--btn-action);
+    }
+    .back-op {
+        background-color: var(--cont-color);
+        padding: .5em;
+        border-radius: .3em;
+        width: 15.7em;
+        border: .01em double var(--grey);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .7);
+    }
+    .field-result {
+        background-color: var(--display);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: .3em 0;
+        width: 100%;
+        height: 3.3em;
+    }
+    .show-op {
+      padding-left: .4em;
+      width: 15em;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+    }
+    .show-op::after {
+      content: '│';
+      color: var(--black);
+      animation: .9s animated  infinite;
+      -webkit-animation: .9s animated  infinite;
+    }
+    @keyframes animated {
+      from { opacity: 0; }
+      to { opacity: 1;}
+    }
+  
+    .field-result input {
+      background-color: transparent;
+      padding-left: .4em;
+      border: none;
+      outline: none;
+    }
+    .show-result {
+      margin: 0 .4em;
+      align-self: flex-end;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1em;
+    }
+    .pink{
+      color: #B74D6C !important;
+    }
+    .yellow{
+      color:#FFDB58 !important;
+    }
+    .container-one {
+      display: grid;
+      grid-template-columns: repeat(6, 41.7px);
+      margin-bottom: .5em;
+    }
+    .container-two {
+      display: grid;
+      grid-template-columns: repeat(5, 50px);
+    }
+    button {
+      background-color: var(--cont-color);
+      border-top: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: none;
+      border-bottom: none;
+      box-shadow: 1px 1px 2px #000;
+      color: var(--white);
+      font-weight: bold;
+      font-size: 12px;
+    }
+    button:active {
+      background-color: #212429;
+    }
+    button.btn {
+      width: 2em;
+      height: 1em;
+      border-radius: 1em;
+    }
+    .btn-column {
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-column span {
+      font-size: .6em;
+      text-align: center;
+      color: var(--white);
+    }
+    .btn {
+      padding: .5em;
+      margin: .2em;
+      cursor: pointer;
+    }
+    .btn-replay {
+      position: relative;
+      width: 5.5em;
+      height: 4em;
+      border-radius: 3em 3em 5em 5em;
+    }
+  
+    .btn-cs {
+      padding: .1em;
+      margin: .3em;
+      border-radius: .4em;
+      cursor: pointer;
+    }
+    .opacity {
+      visibility: hidden;
+    }
+  
+    .btn-math {
+      padding: .5em;
+      margin: .2em;
+      border-radius: 0.5em;
+      cursor: pointer;
+      background-color: var(--grey);
+    }
+    .btn-action {
+      background-color: var(--btn-action);
+    }
+  
