@@ -1,0 +1,17 @@
+{
+  "name": "my-first-code",
+  "version": "1.0.0",
+  "description": "practice_of_my_first_code",
+  "main": "index.js",
+  "scripts": {
+    "start:ar": "node --watch operacion-aritmetica.js",
+    "start:re": "node --watch operacion-relacional.js",
+    "start:bs": "node --watch block-scope.js",
+    "start:co": "node --watch conditionals.js",
+    "start:class": "node --watch class.js",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SamuelAlvarez",
+  "license": "ISC"
+}
