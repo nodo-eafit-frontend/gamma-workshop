@@ -1,0 +1,12 @@
+<main class="main-cotainer">
+  <app-card
+    title="{{ mainService.main?.card?.title }}"
+    description="{{ mainService.main?.card?.description }}"
+  ></app-card>
+  <hr />
+  <app-form form="{{ mainService.main?.form }}"></app-form>
+</main>
+
+<div>
+  {{ mainService.main?.form?.textInput?.placeholder | json }}
+</div>

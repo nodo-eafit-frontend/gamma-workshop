@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil+Display:wght@900&family=Big+Shoulders+Text:wght@900&family=Oswald:wght@600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  /** 16px * 0.625 = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--typography-principal);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  line-height: 1.4; /* Optional */
+  hyphens: auto; /* Optional */
+  font-smooth: always; /* Optional */
+  -webkit-font-smoothing: antialiased; /* Optional */
+  -moz-osx-font-smoothing: grayscale; /* Optional */
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover; /* optional*/
+  object-position: center center; /* optional*/
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  align-self: inherit;
+}
+
+hr {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 0.3rem;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  appearance: none; /* Optional */
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+main,
+section,
+aside,
+article {
+  align-self: inherit;
+}
+
+.magazine {
+  width: 60vh;
+  height: 85vh;
+  margin: 7.5vh auto;
+  background-image: url("https://v2r8c2i8.stackpathcdn.com/wp-content/uploads/2017/09/estadio-santiago-bernabeu-madri.jpg");
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow: 10px 14px 19px 5px rgba(0, 82, 158, 0.66);
+  -moz-box-shadow: 10px 14px 19px 5px rgba(0, 82, 158, 0.66);
+  box-shadow: 10px 14px 19px 5px rgba(0, 82, 158, 0.66);
+}
+.magazine__title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.4rem;
+  color: white;
+  position: relative;
+  top: -5vh;
+}
+.magazine__title span:first-child {
+  background-color: #c80618;
+  position: relative;
+  top: 8.2vh;
+  left: 2vh;
+}
+.magazine__title span:nth-of-type(even) {
+  color: #fefefe;
+  position: relative;
+  top: 5vh;
+  left: 39vh;
+}
+.magazine__title h1 {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  font-size: 10vh;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  text-shadow: -3px 4px 7px #2c87db;
+}
+.magazine__title span:last-child {
+  background-color: #c80618;
+  position: absolute;
+  margin-left: 46vh;
+  margin-top: -22px;
+}
+.magazine__model {
+  position: absolute;
+  height: 93%;
+  z-index: 10;
+  top: 9vh;
+  left: 6vh;
+}
+.magazine__footer {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.4rem;
+  color: #fefefe;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  top: -15vh;
+}
+
+.content {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3.6rem;
+  color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 2.5vh;
+  top: -5vh;
+  z-index: 20;
+  text-shadow: -3px 4px 7px #2c87db;
+}
+.content__logo {
+  width: 30vh;
+  position: relative;
+  left: -6.5vh;
+  top: 4vh;
+}
+.content__bar--code {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 8vh;
+  top: 38vh;
+  height: 29vh;
+}
+.content__left {
+  position: relative;
+  top: -6vh;
+  line-height: 3.5vh;
+}
+.content__right {
+  line-height: 4.3vh;
+  position: absolute;
+  left: 34vh;
+  top: 2vh;
+  text-align: end;
+  height: 60vh;
+}
+.content__phrases {
+  position: relative;
+  top: 0.5vh;
+}
+.content__phrases span:first-child {
+  background-color: #fefefe;
+  color: #0d0d0d;
+  font-size: small;
+  text-shadow: none;
+  position: relative;
+  top: 1vh;
+}
+.content__phrases--gray {
+  color: #868889;
+  font-size: 2.4rem;
+  text-shadow: -3px 4px 2px #0d0d0d;
+  line-height: 2vh;
+  position: relative;
+  top: -1vh;
+}
+.content__phrases--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48vh;
+  height: 20vh;
+  position: relative;
+  top: -2vh;
+}
+.content__phrases--title {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  font-size: 11.8rem;
+  text-transform: uppercase;
+}
+.content__phrases--list {
+  font-size: 2.4rem;
+}
+.content__phrases--white {
+  color: #0d0d0d;
+}
+
+/*# sourceMappingURL=style.css.map */
