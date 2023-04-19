@@ -1,5 +1,0 @@
-node_modules   
-.angular
-
-
-# //ignora todas las dependencias de node_module para que no se guarde en el git  hub
