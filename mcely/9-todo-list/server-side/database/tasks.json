@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": "6afaf2b5-a6f1-43ee-9de1-7d79496f279c",
+      "description": "Planificar Q",
+      "isDone": true
+    },
+    {
+      "id": "171e1813-80fa-431f-9006-215b7135d749",
+      "description": "Actualizar caché",
+      "isDone": false
+    }
+  ]
+}

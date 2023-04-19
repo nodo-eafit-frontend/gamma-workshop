@@ -1,0 +1,14 @@
+@import "@styles";
+
+.input {
+  // border: 2px solid $gray-250-solid;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  background-color: $gray-040-solid;
+  color: $gray-550;
+
+  &:focus {
+    color: $gray-900-solid;
+  }
+}
