@@ -7,8 +7,6 @@ const App = () => {
     <div className='App'>
       <Button text='Lo que yo quiera' kind='warning' />
       <Input type='text' />
-      <AddTask />
-      <Board />
       <Task
         onCancel={() => console.log('Cancel')}
         onOk={(value) => console.log('Ok', { value })}
@@ -16,6 +14,8 @@ const App = () => {
         restoreTask={() => console.log('Do Task')}
         isDone={false}
       />
+      <AddTask />
+      <Board />
     </div>
   );
 };

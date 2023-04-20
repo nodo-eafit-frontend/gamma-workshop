@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { Task } from '@components';
 import './styles.scss';
-import { getTasks } from '@services';
+import { taskApi } from '@services';
+import clsx from 'clsx';
+
+const namespace = 'board';
 
 export const Board = () => {
   const [tasks, setTasks] = useState([]);
+  const classnames = clsx(namespace);
 
   useEffect(() => {
-    getTasks().then((tasksRes) => {
+    taskApi.getTasks().then((tasksRes) => {
       setTasks(tasksRes);
     });
   }, []);
 
   return (
-    <section>
-      {tasks.map(({ description, isDone }) => {
+    <section className={classnames}>
+      {tasks.map(({ description, isDone }, index) => {
         return (
           <Task
+            key={index}
             description={description}
             isDone={isDone}
             onCancel={() => console.log('Cancel')}

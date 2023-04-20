@@ -1,1 +1,9 @@
-@import "@styles";
+@import '@styles';
+
+.board {
+  padding: 1rem;
+  background-color: $bg-secondary;
+  width: fit-content;
+  margin: 1rem auto;
+  box-shadow: $box-shadow-low;
+}
