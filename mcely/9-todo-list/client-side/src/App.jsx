@@ -5,7 +5,7 @@ import { AddTask, Board, Button, Input, Task } from '@components';
 const App = () => {
   return (
     <div className='App'>
-      <Button text='Bustton' kind='primary' />
+      <Button text='Lo que yo quiera' kind='warning' />
       <Input type='text' />
       <AddTask />
       <Board />

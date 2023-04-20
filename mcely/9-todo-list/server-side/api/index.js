@@ -1,15 +1,15 @@
-require("dotenv").config();
-const { v4: uuidv4 } = require("uuid");
-const fs = require("fs");
-const express = require("express");
+require('dotenv').config();
+const { v4: uuidv4 } = require('uuid');
+const fs = require('fs');
+const express = require('express');
 const api = express.Router();
 const { TASKS_PATH } = process.env;
-const jsonReader = require("../utils/json-reader");
+const jsonReader = require('../utils/json-reader');
 
-api.get("/tasks", (req, res) => {
+api.get('/tasks', (req, res) => {
   fs.readFile(TASKS_PATH, (err, data) => {
     if (err) {
-      const msgError = "Error reading file: " + err;
+      const msgError = 'Error reading file: ' + err;
       console.error(msgError);
       res.status(400).send(msgError);
     } else {
@@ -20,19 +20,20 @@ api.get("/tasks", (req, res) => {
   });
 });
 
-api.put("/task", (req, res) => {
+api.put('/task', (req, res) => {
   const { description } = req.body;
 
   jsonReader(TASKS_PATH, (err, data) => {
     if (err) {
-      const msgError = "Error reading file: " + err;
+      const msgError = 'Error reading file: ' + err;
       console.error(msgError);
       res.status(400).send(msgError);
     }
 
     const { tasks } = data;
+    const id = uuidv4();
     const newTask = {
-      id: uuidv4(),
+      id,
       description,
       isDone: false,
     };
@@ -41,23 +42,25 @@ api.put("/task", (req, res) => {
 
     fs.writeFile(TASKS_PATH, JSON.stringify({ tasks }), (err) => {
       if (err) {
-        const msgError = "Error writing file: " + err;
+        const msgError = 'Error writing file: ' + err;
         console.error(msgError);
         res.status(400).send(msgError);
       }
 
-      res.sendStatus(200);
+      console.log({ id });
+
+      res.status(200).send({ id });
     });
   });
 });
 
-api.post("/task/:id", (req, res) => {
+api.post('/task/:id', (req, res) => {
   const { id } = req.params;
   const { description, isDone } = req.body;
 
   jsonReader(TASKS_PATH, (err, data) => {
     if (err) {
-      const msgError = "Error reading file: " + err;
+      const msgError = 'Error reading file: ' + err;
       console.error(msgError);
       res.status(400).send(msgError);
     }
@@ -66,11 +69,11 @@ api.post("/task/:id", (req, res) => {
     const taskIndex = tasks.findIndex((task) => task.id === id);
 
     if (description) tasks[taskIndex].description = description;
-    if (typeof isDone === "boolean") tasks[taskIndex].isDone = isDone;
+    if (typeof isDone === 'boolean') tasks[taskIndex].isDone = isDone;
 
     fs.writeFile(TASKS_PATH, JSON.stringify({ tasks }), (err) => {
       if (err) {
-        const msgError = "Error writing file: " + err;
+        const msgError = 'Error writing file: ' + err;
         console.error(msgError);
         res.status(400).send(msgError);
       }
@@ -80,12 +83,12 @@ api.post("/task/:id", (req, res) => {
   });
 });
 
-api.delete("/task/:id", (req, res) => {
+api.delete('/task/:id', (req, res) => {
   const { id } = req.params;
 
   jsonReader(TASKS_PATH, (err, data) => {
     if (err) {
-      const msgError = "Error reading file: " + err;
+      const msgError = 'Error reading file: ' + err;
       console.error(msgError);
       res.status(400).send(msgError);
     }
@@ -101,7 +104,7 @@ api.delete("/task/:id", (req, res) => {
 
     fs.writeFile(TASKS_PATH, JSON.stringify({ tasks }), (err) => {
       if (err) {
-        const msgError = "Error writing file: " + err;
+        const msgError = 'Error writing file: ' + err;
         console.error(msgError);
         res.status(400).send(msgError);
       }

@@ -1,6 +1,6 @@
 const url = 'http://localhost:3001/';
 
-fetch(url)
+fetch(url, { method: 'PUT' })
   .then((response) => response.json())
   .then((data) => {
     getHomePage(data);
