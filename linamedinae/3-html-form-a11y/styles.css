@@ -38,7 +38,7 @@ main {
     padding: 10px 0;
 }
 
-.formulario__group-input {
+.formulario__grupo-input {
     position: relative;
 }
 
@@ -90,11 +90,11 @@ main {
     margin: 0 10px;
 }
 
-.formulario__group-terminos {
+.formulario__grupo-terminos {
     text-align: center;
 }
 
-.formulario__group-terminos, .formulario__mensaje, .formulario__group-btn-enviar {
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
     grid-column: span 2;
 }
 
@@ -112,7 +112,7 @@ main {
     display: block;
 }
 
-.formulario__group-btn-enviar {
+.formulario__grupo-btn-enviar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,26 +145,28 @@ main {
 }
 
 
+
 /* -------------------- VALIDACIÓN -----------------------*/
-.formulario__group-correcto .formulario__validacion-estado{
+.formulario__grupo-correcto .formulario__validacion-estado{
     color: #29ee0f;
     opacity: 1;
 }
 
-.formulario__group-incorrecto .formulario__label{
+.formulario__grupo-incorrecto .formulario__label{
     color: #ee0f0f;
 }
 
 
-.formulario__group-incorrecto .formulario__validacion-estado{
+.formulario__grupo-incorrecto .formulario__validacion-estado{
     color: #ee0f0f;
     opacity: 1;
 }
 
-.formulario__group-incorrecto .formulario__input{
+.formulario__grupo-incorrecto .formulario__input{
     border: 1px solid #ee0f0f;
     
 }
+
 
 /* -------------------- RESPONSIVE -----------------------*/
 @media screen and (max-width:720px) {
