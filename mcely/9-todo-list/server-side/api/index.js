@@ -47,8 +47,6 @@ api.put('/task', (req, res) => {
         res.status(400).send(msgError);
       }
 
-      console.log({ id });
-
       res.status(200).send({ id });
     });
   });
@@ -92,8 +90,6 @@ api.delete('/task/:id', (req, res) => {
       console.error(msgError);
       res.status(400).send(msgError);
     }
-
-    console.log({ data });
 
     const { tasks } = data;
     const taskIndex = tasks.findIndex((task) => task.id === id);
