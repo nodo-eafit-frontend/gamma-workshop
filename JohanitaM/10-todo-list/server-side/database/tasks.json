@@ -1,0 +1,7 @@
+{
+  "tasks": [
+    { "id": "6afaf2b5-a6f1-43ee-9de1-7d79496f279c", "description": "Planificar Q", "isDone": true },
+    { "id": "edc81a9e-c491-4da8-a74e-ec66143dce23", "description": "Estudiar en Interactiva", "isDone": false },
+    { "id": "87ac039f-bfba-4050-a27d-b78f360de119", "description": "Repasar Javascript", "isDone": false }
+  ]
+}

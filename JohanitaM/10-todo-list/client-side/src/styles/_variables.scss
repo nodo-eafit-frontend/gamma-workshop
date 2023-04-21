@@ -1,0 +1,10 @@
+/*
+  320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV
+*/
+
+$box-shadow-high: 5px 5px 7px 0px $gray-550;
+$box-shadow-low: 2px 2px 3px 0px $gray-550;
