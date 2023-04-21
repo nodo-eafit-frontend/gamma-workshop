@@ -22,8 +22,8 @@ main {
     margin: 25px auto;
     padding: 10px 40px;
     border-radius: 10px;
-    border: 2px solid #035f22;
-    box-shadow: 0 2px 10px #035f22, 0 2px 10px #035f22;
+    border: 2px solid #51f3d5;
+    box-shadow: 0 2px 10px #51f3d5, 0 2px 10px #51f3d5;
 }
 
 /* -------------------- FORMULARIO -----------------------*/
@@ -45,7 +45,7 @@ main {
 .formulario__input {
     width: 90%;
     background: transparent;
-    border-bottom: 2px solid #035f22;
+    border-bottom: 2px solid #51f3d5;
     border-right: none;
     color: #fff;
     font-size: 17px;
@@ -65,7 +65,7 @@ main {
 }
 
 .formulario__input:focus {
-    box-shadow: 0 0 5px #035f22;
+    box-shadow: 0 0 5px #51f3d5;
 }
 
 .formulario__input-error {
@@ -128,7 +128,7 @@ main {
 }
 
 .formulario__btn:hover {
-    background: #035f22;
+    background: #51f3d5;
     transition: 1s;
 }
 
