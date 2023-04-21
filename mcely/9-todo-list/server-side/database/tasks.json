@@ -2,13 +2,6 @@
   "tasks": [
     { "id": "6afaf2b5-a6f1-43ee-9de1-7d79496f279c", "description": "Planificar Q", "isDone": true },
     { "id": "edc81a9e-c491-4da8-a74e-ec66143dce23", "description": "Estudiar en Interactiva", "isDone": false },
-    { "id": "87ac039f-bfba-4050-a27d-b78f360de119", "description": "Repasar Javascript", "isDone": true },
-    { "id": "04b1bb8e-abbc-4f0b-9a76-5b2327d6dd18", "description": "Adeantar Proyecto Nodo", "isDone": false },
-    { "id": "d38c672c-f924-4b51-9e42-6d5214add6a2", "description": "Adeantar Proyecto Nodo", "isDone": false },
-    { "id": "ec65ed22-9375-4e91-9941-64db00feac6b", "description": "Adeantar Proyecto Nodo", "isDone": false },
-    { "id": "c87919af-90e5-47e6-82a6-edfec88eafb4", "description": "Adeantar Proyecto Nodo", "isDone": false },
-    { "id": "b6be89d6-f27a-4ff5-ab19-adb9b7971456", "description": "Adeantar Proyecto Nodo", "isDone": false },
-    { "id": "d4c5fb05-60cb-46eb-b367-e31f108906f9", "description": "Adeantar Proyecto Nodo", "isDone": false },
-    { "id": "7b8b1429-09d1-4579-8e48-ad5e4ae722ce", "description": "Adeantar Proyecto Nodo", "isDone": false }
+    { "id": "87ac039f-bfba-4050-a27d-b78f360de119", "description": "Repasar Javascript", "isDone": false }
   ]
 }

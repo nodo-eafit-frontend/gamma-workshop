@@ -1,23 +1,25 @@
-import { useState, useEffect } from "react";
-import { Button, Input } from "@components";
-import clsx from "clsx";
-import "./styles.scss";
+import { useState, useEffect } from 'react';
+import { Button, Input } from '@components';
+import clsx from 'clsx';
+import './styles.scss';
+import { useBoard, useBoardContext } from '@contexts/BoardContext';
 
-const namespace = "task";
+const namespace = 'task';
 
 export const Task = (props) => {
-  const {
-    description = "",
-    isDone = false,
-    onCancel,
-    onOk,
-    doTask,
-    restoreTask,
-  } = props;
-  const [isEditing, setIsEditing] = useState(true);
-  const [isLoading, setIsLoading] = useState(false); // TODO: use Reducers
+  const { id, description = '', isDone = false, isEditing = false, onCancel, onOk, doTask, restoreTask } = props;
+
+  const { dispatch } = useBoardContext();
+  const [isLoading, setIsLoading] = useState(false);
   const [isEmpty, setIsEmpty] = useState(false);
   const [value, setValue] = useState(description);
+
+  // useEffect(() => {
+  //   if (isEditing) {
+  //     dispatch({ type: 'isEditing', payoad: isEditing });
+  //   }
+  // }, [isEditing]);
+
   const classnames = clsx(namespace, {
     [`${namespace}__is-done`]: isDone,
   });
@@ -27,18 +29,18 @@ export const Task = (props) => {
     const { value } = event.target[0];
 
     onOk(value);
-    setIsEditing(false);
+    dispatch({ type: 'modifyTask', payload: { id, isEditing: false } });
   };
 
   const handlerCancel = () => {
     setTimeout(() => {
       onCancel();
-      setIsEditing(false);
+      dispatch({ type: 'modifyTask', payload: { id, isEditing: false } });
     }, 0); // Let type reset clear input value before destroy Cancel Button
   };
 
   const handlerFocus = (e) => {
-    setIsEditing(true);
+    dispatch({ type: 'modifyTask', payload: { id, isEditing: true } });
   };
 
   const handlerChange = ({ target }) => {
@@ -49,32 +51,27 @@ export const Task = (props) => {
   const renderButtonsActions = () => {
     return (
       <>
-        <Button text="Ok" kind="success" type="submit" disabled={!isEmpty} />
-        <Button
-          text="Cancel"
-          kind="error"
-          type="reset"
-          onClick={handlerCancel}
-          disabled={isLoading}
-        />
+        <Button text='Ok' kind='success' type='submit' disabled={!isEmpty} />
+        <Button text='Cancel' kind='error' type='reset' onClick={handlerCancel} disabled={isLoading} />
       </>
     );
   };
 
   const renderTodoButtons = () => {
     return isDone ? (
-      <Button text="Undone" kind="warning" onClick={doTask} />
+      <Button text='Undone' kind='warning' onClick={doTask} />
     ) : (
-      <Button text="Done" kind="primary" onClick={restoreTask} />
+      <Button text='Done' kind='primary' onClick={restoreTask} />
     );
   };
 
   return (
     <form className={classnames} onSubmit={handlerSubmit}>
       <Input
-        type="text"
+        type='text'
         onFocus={handlerFocus}
         onChange={handlerChange}
+        autoFocus={isEditing && 'autofocus'}
         disabled={isDone}
         value={value}
       />

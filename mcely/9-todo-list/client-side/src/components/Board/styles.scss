@@ -6,4 +6,9 @@
   width: fit-content;
   margin: 1rem auto;
   box-shadow: $box-shadow-low;
+
+  &__add-task {
+    width: -webkit-fill-available;
+    width: -moz-available;
+  }
 }
