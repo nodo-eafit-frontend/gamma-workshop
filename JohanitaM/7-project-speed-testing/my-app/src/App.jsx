@@ -1,12 +1,13 @@
-// import { Header } from "./components/organism";
 import { Outlet } from "react-router-dom";
+import { Header } from "./components/organism";
+
 
 
 
 const App = () => {
   return  (
   <>
-  {/* <Header />   */}
+  <Header />
   <Outlet />
   </>
   );
