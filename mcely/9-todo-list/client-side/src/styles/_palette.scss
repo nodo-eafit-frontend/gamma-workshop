@@ -1,0 +1,92 @@
+// Basic colors
+$white: #fff !default;
+$black: #000 !default;
+
+// Translucent Grays
+$gray-900: rgba($black, 0.9) !default; //primary text
+$gray-550: rgba($black, 0.55) !default; // secondary text
+$gray-250: rgba($black, 0.25) !default; //	disabled text
+$gray-100: rgba($black, 0.1) !default;
+$gray-070: rgba($black, 0.07) !default;
+$gray-040: rgba($black, 0.04) !default;
+
+// Solid Grays
+$gray-900-solid: #1a1a1a !default; //primary text
+$gray-550-solid: #737373 !default; // secondary text
+$gray-250-solid: #bfbfbf !default; //	disabled text
+$gray-100-solid: #e5e5e5 !default;
+$gray-070-solid: #ededed !default;
+$gray-040-solid: #f5f5f5 !default;
+
+// Green
+$green-100: rgba(0, 166, 80, 0.1) !default;
+$green-150: rgba(0, 166, 80, 0.15) !default;
+$green-200: rgba(0, 166, 80, 0.2) !default;
+$green-300: rgba(0, 166, 80, 0.3) !default;
+$green-400: rgba(0, 166, 80, 0.4) !default;
+$green-500: #00a650 !default;
+$green-600: #008744 !default;
+$green-700: #063 !default;
+$green-800: #004d27 !default;
+
+// Orange
+$orange-100: rgba(255, 119, 51, 0.1) !default;
+$orange-150: rgba(255, 119, 51, 0.15) !default;
+$orange-200: rgba(255, 119, 51, 0.2) !default;
+$orange-300: rgba(255, 119, 51, 0.3) !default;
+$orange-400: rgba(255, 119, 51, 0.4) !default;
+$orange-500: #f73 !default;
+$orange-600: #e6540b !default;
+$orange-700: #cc3e0a !default;
+$orange-800: #a62a08 !default;
+
+// Red
+$red-100: rgba(242, 61, 79, 0.1) !default;
+$red-150: rgba(242, 61, 79, 0.15) !default;
+$red-200: rgba(242, 61, 79, 0.2) !default;
+$red-300: rgba(242, 61, 79, 0.3) !default;
+$red-400: rgba(242, 61, 79, 0.4) !default;
+$red-500: #f23d4f !default;
+$red-600: #d12440 !default;
+$red-700: #a61d33 !default;
+$red-800: #801627 !default;
+
+// Yellow
+$yellow-500: #ffe600 !default;
+
+// Base theme ('mercadolibre')
+$blue-base: rgb(65, 137, 230) !default;
+$blue-100: rgba($blue-base, 0.1) !default;
+$blue-150: rgba($blue-base, 0.15) !default;
+$blue-200: rgba($blue-base, 0.2) !default;
+$blue-300: rgba($blue-base, 0.3) !default;
+$blue-400: rgba($blue-base, 0.4) !default;
+$blue-500: #3483fa !default;
+$blue-600: #2968c8 !default;
+$blue-700: #1f4e96 !default;
+$blue-800: #183c73 !default;
+
+// Primary
+$color-primary: $blue-500 !default;
+
+// Accent
+$color-accent: $yellow-500 !default;
+
+// Background
+$bg-primary: $gray-070-solid !default;
+$bg-secondary: $gray-040-solid !default;
+$bg-white: $white !default;
+
+// Feedback
+
+// Color Positive
+$success-green: $green-500 !default;
+$success-green-secondary: $green-600 !default;
+
+// Color Caution
+$warning-orange: $orange-500 !default;
+$warning-orange-secondary: $orange-600 !default;
+
+// Color Negative
+$error-red: $red-500 !default;
+$error-red-secondary: $red-600 !default;

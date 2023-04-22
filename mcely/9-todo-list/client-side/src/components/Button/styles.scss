@@ -1,0 +1,48 @@
+@import "@styles";
+
+.button {
+  border: 1px solid $gray-550-solid;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  border-radius: 4px;
+  box-shadow: $box-shadow-high;
+
+  &__primary {
+    background-color: $color-primary;
+    color: $gray-040-solid;
+  }
+
+  &__accent {
+    background-color: $color-accent;
+  }
+
+  &__success {
+    background-color: $success-green;
+    color: $gray-040-solid;
+  }
+
+  &__error {
+    background-color: $error-red;
+    color: $gray-040-solid;
+  }
+
+  &__warning {
+    background-color: $warning-orange;
+    color: $gray-040-solid;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: $box-shadow-low;
+  }
+
+  &:disabled {
+    background-color: $gray-250-solid;
+    color: $gray-550-solid;
+    cursor: not-allowed;
+    box-shadow: $box-shadow-low;
+  }
+}
