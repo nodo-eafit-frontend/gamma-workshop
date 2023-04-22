@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+form {
+  background-color: white;
+  width: 30vw;
+  height: fit-content;
+  padding: 2em;
+  margin: 4em 35vw;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  position: relative;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border: 1px solid rgba(220, 20, 60, 0.2);
+  border-radius: 10px;
+  background-color: rgba(223, 223, 127, 0.05);
+  margin-bottom: 1em;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus{
+  border:1px solid red;
+}
+
+input.error:not([type="checkbox"]):not([type="radio"]) {
+  border: 1px solid red;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: none;
+  border: 1px solid rgba(220, 20, 60, 0.2);
+  margin-top: 1em;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+fieldset legend {
+  padding: 0 1em;
+}
+
+fieldset label {
+  display: block;
+  width: 9em;
+}
+
+input[type="checkbox"] {
+  margin-right: 1em;
+  margin-bottom: 0.7em;
+}
+
+button {
+  background-color: rgba(220, 20, 60, 0.719);
+  color: white;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border: none;
+  margin: 1em auto;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color:crimson;
+}
+
+.error {
+  border: 1px solid red;
+  background-color: lightcoral;
+}
