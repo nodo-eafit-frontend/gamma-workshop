@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario registro</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro plataforma</h1>
+        <form class="Form">
+            <div class="form-item">
+                <label for="FirstName">Nombre</label>
+                <input type="text" id="FirstName" placeholder="Primer nombre" required>
+            </div>
+            <div class="form-item">
+                <label for="LastName">Apellidos</label>
+                <input type="text" id="LastName" placeholder="Apellidos">
+            </div>
+            <div class="form-item">
+                <label for="Email">Correo</label>
+                <input type="email" id="Email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-item">
+                <label for="Password">Contraseña</label>
+                <input type="password" id="Password" placeholder="Contraseña" required>
+            </div>
+            <div class="form-item">
+                <label for="Address">Dirección</label>
+                <input type="text" id="Address" placeholder="Dirección de residencia" required>
+            </div>
+            <div class="form-item">
+                <label for="Address2">Complemento</label>
+                <input type="text" id="Address2" placeholder="Bloque, apartamento, casa, etc">
+            </div>
+            <div class="form-item">
+                <label for="Number">Número de teléfono</label>
+                <input type="tel" id="Number" placeholder="Fijo o celular">
+            </div>
+            <div class="form-item">
+                <label for="City">Seleccione su ciudad</label>
+                <select id="City">
+                    <option>Medellín</option>
+                    <option>Bello</option>
+                    <option>Itagüi</option>
+                    <option>Sabaneta</option>
+                    <option>Rionegro</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <button id="Register">Registrar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

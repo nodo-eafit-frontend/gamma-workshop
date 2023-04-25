@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora científica</title>
+    <script src="https://kit.fontawesome.com/ac5523c42b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <main class="container-all">
+        <div class="back-op">
+            <div class="field-name">
+                <p>CASIO</p>
+                <span>S-V.P.A.M</span>
+                <p>fx-350MS</p>
+            </div>
+            <div class="field-result"> 
+                <div class="show-op turn-on-off" id="texto"></div>
+                <input readonly autocomplete="off" id="results_calc" type="hidden" value="" size="28" maxlength="25">
+                <div class="show-result"></div>
+            </div>
+            <section class="container">
+                <div class="btn-column">
+                    <span class="yellow">SHIFT</span>
+                    <button class="btn"></button>
+                </div>
+                <div class="btn-column">
+                    <span class="pink">ALPHA</span>
+                    <button class="btn"></button>
+                </div>
+                <button class="btn-replay">REPLAY</button>
+                <div class="btn-column">
+                    <span>MODE</span>
+                    <button class="btn"></button>
+                </div>
+                <div class="btn-column">
+                    <span>ON</span>
+                    <button class="btn onOff"></button>
+                </div>
+            </section>
+            <section class="container-one">
+                <button class="btn-cs x-1" value="*">x</button> 
+                <button class="btn-cs" value="equal">Calc</button>
+                <span class="btn-cs opacity"></span>
+                <span class="btn-cs opacity"></span>
+                <button class="btn-cs" value="3,1416">Pi</button>
+                <button class="btn-cs x3" value="pow">x³</button>
+                <button class="btn-cs">ab/c</button>
+                <button class="btn-cs" value="sqrt">√</button>
+                <button class="btn-cs" value="sq">x²</button>
+                <button class="btn-cs" value="^">^</button>
+                <button class="btn-cs" value="log">log</button>
+                <button class="btn-cs" value="ln">ln</button>
+                <button class="btn-cs" value="-">(-)</button>
+                <button class="btn-cs">.,,,</button>
+                <button class="btn-cs">hyp</button>
+                <button class="btn-cs" value="sin">sin</button>
+                <button class="btn-cs" value="cos">cos</button>
+                <button class="btn-cs" value="tan">tan</button>
+                <button class="btn-cs">RCL</button>
+                <button class="btn-cs">ENG</button>
+                <button class="btn-cs" value="(">(</button>
+                <button class="btn-cs" value=")">)</button>
+                <button class="btn-cs" value=",">,</button>
+                <button class="btn-cs" value="+">M+</button>
+              </section>
+              <section class="container-two">
+                <button class="btn-math" value="7">7</button>
+                <button class="btn-math" value="8">8</button>
+                <button class="btn-math" value="9">9</button>
+                <button class="btn-math btn-action" value="del">DEL</button>
+                <button class="btn-math btn-action" value="clear">AC</button>
+                <button class="btn-math" value="4">4</button>
+                <button class="btn-math" value="5">5</button>
+                <button class="btn-math" value="6">6</button>
+                <button class="btn-math" value="*">x</button>
+                <button class="btn-math" value="/">/</button>
+                <button class="btn-math" value="1">1</button>
+                <button class="btn-math" value="2">2</button>
+                <button class="btn-math" value="3">3</button>
+                <button class="btn-math" value="+">+</button>
+                <button class="btn-math" value="-">-</button>
+                <button class="btn-math" value="0">0</button>
+                <button class="btn-math" value=".">.</button>
+                <button class="btn-math" value="exp">EXP</button>
+                <button class="btn-math" value="ans">Ans</button>
+                <button class="btn-math" value="equal">=</button>
+             </section>
+        </div>      
+    </main> 
+</body>
+<script src="./calculator.js"></script>
+</html>

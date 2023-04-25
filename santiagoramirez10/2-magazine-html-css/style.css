@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 2.3vh;
+  font-weight: 400;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; /* optional*/
+  -o-object-position: center center;
+     object-position: center center; /* optional*/
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  align-self: inherit;
+}
+
+hr {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 0.3rem;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* Optional */
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+main,
+section,
+aside,
+article {
+  align-self: inherit;
+}
+
+body {
+  background-image: url("./assets/img/wood_background.jpg");
+  background-size: cover;
+  background-repeat: round;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.magazine {
+  width: 70vh;
+  height: 95vh;
+  background-image: url("./assets/img/Nebulosa.jpg");
+  background-size: cover;
+  position: relative;
+  box-shadow: 15px 15px 20px -7px rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.magazine__prz__logo {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+.magazine__prz {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+.magazine__title {
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+.magazine__title h1 {
+  color: #293D82;
+  font-size: 3.2vh;
+  background-color: #FFFFFF;
+  padding-right: 10px;
+}
+.magazine__title h2 {
+  color: #FFFFFF;
+  font-size: 1.4vh;
+  padding-right: 10px;
+}
+
+.content__wording {
+  font-size: 2.3vh;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content__wording--yellow {
+  color: #F8F044;
+}
+.content__left--bar-code {
+  width: 10vh;
+  transform: rotate(270deg);
+  top: 50px;
+  left: 0px;
+  position: absolute;
+}
+.content__rigth--meteorite {
+  width: 15vh;
+  transform: rotate(90deg);
+  right: 5vh;
+  bottom: 20vh;
+  position: absolute;
+  z-index: 50;
+}/*# sourceMappingURL=style.css.map */
