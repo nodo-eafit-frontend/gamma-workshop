@@ -1,0 +1,19 @@
+{
+    "name": "my-first-code",
+    "version": "1.0.0",
+    "description": "practica de mi primer codigo",
+    "main": "index.js",
+    "scripts": {
+      "start": "node --watch index.js", 
+      "start:or": "node --watch operacion-relacional.js", 
+      "start:oa": "node --watch operacion-aritmetica.js",
+      "start:bs": "node --watch block-scope.js",
+      "start:co": "node --watch conditionals.js",
+      "start:loop": "node --watch loop.js",
+      "start:loop-ao": "node --watch loops-arrays-object.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "JohanitaM",
+    "license": "ISC"
+  }
+  

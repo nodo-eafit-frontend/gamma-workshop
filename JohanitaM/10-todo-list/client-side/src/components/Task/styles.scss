@@ -1,0 +1,10 @@
+@import "@styles";
+
+.task {
+  display: flex;
+
+  &__is-done .input {
+    text-decoration: line-through;
+    background-color: $bg-primary;
+  }
+}
