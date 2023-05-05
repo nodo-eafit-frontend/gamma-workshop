@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Cuéntanos de ti</title>
+</head>
+
+<body class="content">
+    <main class="content__main">
+        <header >
+            <h1 class="content__title">Tech Store</h1>
+            <p class="content__parrafo">
+                Completa por favor el siguiente formulario para poder brindarte una mejor atención.
+            </p>
+        </header><br />
+
+        <form class="form">
+            <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder=" " required />
+                <label for="name" class="form__label">Nombre</label>
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+                <input type="date" id="date" required placeholder=" " />
+                <label for="date" class="form__label--select">Fecha de nacimiento</label>
+            </div>
+
+            <div class="form__group">
+                <select id="sex" class="form__select" required>
+                    <option value="genero" disabled selected>
+                        Selecciona tú género
+                    </option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="sex" class="form__label--select">Genero</label>
+            </div>
+
+            <div class="form__group">
+                <input type="number" id="tel" placeholder="3207509238" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <label for="tel" class="form__label--select">Número de contacto</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="email" class="form__input" placeholder=" " required />
+                <label for="email" class="form__label">Correo electrónico</label>
+                <span class="form__line"></span>
+            </div>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="direccion" class="form__input" placeholder=" " required/>
+                <label for="direccion" class="form__label">País</label>
+                <select  class="form__select">
+                    <option value="pais" class="form__option" disabled selected>Seleccione su país</option>
+                    <option value="colombia" class="form__option">Colombia</option>
+                    <option value="argentina" class="form__option">Argentina</option>
+                    <option value="brasil" class="form__option">Brasil</option>
+                    <option value="Chile" class="form__option">Chile</option>
+                    <option value="Chile" class="form__option">Otro</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label for="text" class="form__label">Mensaje para describir que te interesa</label><br/><br/>
+                <textarea id="text" class="form__textarea" cols="80" rows="10" maxlength="175" required></textarea>   
+            </div>
+            
+            <input type="submit" class="form__submit" value="Enviar respuestas">
+        </form> 
+    </main>
+</body>
+
+</html>
