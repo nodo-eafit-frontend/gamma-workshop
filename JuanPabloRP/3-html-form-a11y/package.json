@@ -1,0 +1,12 @@
+{
+  "name": "3-html-form-a11y",
+  "version": "1.0.0",
+  "description": "Many times the users has problematics with the web pages because they could recast their:\r   - Glasess 👓\r   - The mouse 🖱️\r   - Maximize accidentally the monitor screen 🔬\r   - Color detection 🖌️",
+  "main": "index.js",
+  "scripts": {
+    "start:sass": "sass style.scss style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

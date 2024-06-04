@@ -1,0 +1,165 @@
+@import './assets/styles';
+
+body {
+	background-image: url('http://i.stack.imgur.com/jGlzr.png');
+	background-size: cover;
+	background-repeat: round;
+	//overflow-y: hidden;
+	line-height: 1;
+}
+
+.magazine {
+	width: 62vh;
+	height: 85vh;
+	margin: 7.5vh auto;
+	background-image: url('./assets/img/background-magazine.jpg');
+	background-size: cover;
+	position: relative;
+	box-shadow: $shadow-magazine;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__title {
+		font-size: $font-size-lt;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		margin-inline: auto;
+		width: fit-content;
+		position: relative;
+		z-index: $z-index-title;
+		color: $color-primary;
+
+		& h1 {
+			line-height: 0.8;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			letter-spacing: 6vh;
+			top: 0;
+		}
+
+		& span {
+			font-family: $font-secundary-op1;
+			font-size: $font-size-st;
+			text-align: right;
+			padding-inline: 7vh;
+			color: $color-secondary;
+		}
+	}
+
+	&__model {
+		position: absolute;
+		top: -3%;
+		left: 0.3%;
+		height: 103%;
+		z-index: $z-index-model;
+	}
+}
+
+.content {
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	//padding: 0.2rem;
+	z-index: $z-index-content;
+
+	&__left {
+		font-family: $font-secundary-op2;
+		font-weight: $font-weigth-l;
+		font-size: $font-size-s;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		height: 65vh;
+		padding: 0 0 0 1vh;
+	}
+
+	&__right {
+		justify-self: center;
+		align-self: flex-end;
+		margin-right: 0.5vh;
+		& h2 {
+			font-family: $font-secundary-op1;
+			font-size: $font-size-xl;
+			padding: 0 0 0 7vh;
+			text-transform: uppercase;
+
+			& span:nth-child(odd) {
+				font-size: calc($font-size-xl - 1.5vh);
+				line-height: 0.8vh;
+			}
+		}
+
+		& p {
+			margin: 1vh 0;
+			position: relative;
+		}
+
+		& p > span {
+			text-transform: lowercase;
+			font-size: $font-size-s;
+			font-weight: $font-size-m;
+		}
+
+		& p > span:first-child,
+		p > span:last-child,
+		p > span:nth-child(4) {
+			text-transform: uppercase;
+		}
+	}
+
+	&__wording {
+		& h2 {
+			text-transform: uppercase;
+			font-size: $font-size-lr;
+			font-weight: $font-weigth-lt;
+		}
+
+		& h3 {
+			font-size: $font-size-s;
+			font-weight: $font-weigth-lt;
+			text-transform: uppercase;
+			margin-right: 15px;
+			margin-right: 5px;
+		}
+
+		& p,
+		span {
+			font-size: $font-size-m;
+			font-weight: $font-weigth-s;
+			text-transform: uppercase;
+		}
+
+		&--red {
+			color: $color-primary;
+		}
+
+		&--blue {
+			color: $color-tertiary;
+		}
+
+		&--white {
+			color: $color-secondary;
+		}
+	}
+
+	&__container-barcode {
+		//transform: rotate(-90deg);
+	}
+
+	&__text-barcode {
+		font-size: $font-size-st !important;
+		font-weight: $font-weigth-sr;
+	}
+
+	&__barcode {
+		width: 12vh;
+	}
+}
