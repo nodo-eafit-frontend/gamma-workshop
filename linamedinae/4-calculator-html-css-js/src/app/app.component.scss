@@ -1,0 +1,46 @@
+
+
+.container input{
+    background: rgb(255, 255, 255);
+    color: rgb(6, 162, 160 );
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px dashed rgb(0, 0, 0);
+    margin: 2px;
+    font-size: xx-large;
+
+    &:hover{
+        color: rgb(112, 239, 239);
+        font-weight: bold;
+    }
+}
+
+.full{
+    border: 10px solid rgb(76, 240, 237);
+    margin: 2px;
+    padding: 12px;
+    border-radius: 20px;
+    background-image: url('../assets/img/fondo.jpg');
+}
+
+input[type="text"]{
+    color: rgb(0, 0, 0);
+    text-align: right;
+
+}
+
+
+
+.scroll{
+    height: 250px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.card{
+    margin-top: 22px;
+    background-color: rgb(255, 255, 255);
+    border: 1px dashed rgb(0, 0, 0);
+
+}
