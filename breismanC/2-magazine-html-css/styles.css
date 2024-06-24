@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gupter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%; /** 16px * 0.625 = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--typography-principal);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  line-height: 1.4; /* Optional */
+  hyphens: auto; /* Optional */
+  font-smooth: always; /* Optional */
+  -webkit-font-smoothing: antialiased; /* Optional */
+  -moz-osx-font-smoothing: grayscale; /* Optional */
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover; /* optional*/
+  object-position: center center; /* optional*/
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  align-self: inherit;
+}
+
+hr {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 0.3rem;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  appearance: none; /* Optional */
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+main,
+section,
+aside,
+article {
+  align-self: inherit;
+}
+
+.magazzine {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/img/background.png");
+  background-size: cover;
+  background-repeat: round;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border: 20px solid #020202;
+  height: 80%;
+  width: 80%;
+  position: relative;
+  margin-top: 5%;
+}
+.content__bubble {
+  position: absolute;
+  background-color: #30A080;
+  border-radius: 50%;
+  z-index: -1;
+}
+.content__bubble--topLeft {
+  font-size: 3.2em;
+  text-align: center;
+  line-height: 2.3em;
+  font-family: "Italiana", serif;
+  top: -15%;
+  left: 10%;
+  width: 20%;
+  height: 35%;
+}
+.content__bubble--left {
+  background-color: #FD054D;
+  top: 30%;
+  left: -14%;
+  width: 25%;
+  height: 50%;
+}
+.content__bubble--rigth {
+  top: -15%;
+  right: -12%;
+  width: 30%;
+  height: 60%;
+}
+
+.sections {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100%;
+  background-color: #FDFDFD;
+  z-index: 10;
+}
+.sections__left {
+  width: 100%;
+  height: 100%;
+}
+.sections__left .header {
+  height: 9%;
+  display: flex;
+  align-items: flex-end;
+}
+.sections__left .header__img {
+  width: 15%;
+  height: 35%;
+  margin: 0 5px 2.5% 0px;
+}
+.sections__left .header__title {
+  font-family: "IM Fell French Canon", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #020202;
+}
+.sections__left .article {
+  height: 91%;
+  position: relative;
+}
+.sections__left .article__title {
+  z-index: 20;
+  font-family: "Gupter", serif;
+  font-size: 14rem;
+  font-weight: 900;
+  color: #FDFDFD;
+}
+.sections__left .article__title--top {
+  position: absolute;
+  bottom: 28%;
+  left: -22%;
+}
+.sections__left .article__title--bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 22%;
+}
+.sections__left .article__img {
+  position: absolute;
+  object-fit: fill;
+}
+.sections__left .article__img--tertiary {
+  width: 70%;
+  height: 80%;
+  top: 0px;
+  right: -10%;
+}
+.sections__left .article__img--secondary {
+  width: 60%;
+  height: 90%;
+  bottom: 0px;
+  left: 0;
+}
+.sections__left .article__img--primary {
+  width: 80%;
+  height: 60%;
+  bottom: 0px;
+  right: 5%;
+}
+.sections__center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sections__center .list {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15%;
+  margin-right: 15%;
+  padding-bottom: 2%;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+.sections__center .header {
+  height: 22%;
+  position: relative;
+  margin-top: 2%;
+  padding-left: 3%;
+}
+.sections__center .header__title {
+  color: #FD054D;
+  width: 65%;
+  text-align: right;
+}
+.sections__center .header__title--essence {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.sections__center .header__title--of {
+  font-family: "Grey Qo", cursive;
+  color: #020202;
+  font-size: 2.5rem;
+  vertical-align: top;
+}
+.sections__center .header__title--fashion {
+  font-family: "Gupter", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.sections__center .header__img {
+  position: absolute;
+  z-index: 10;
+  width: 65%;
+  height: 60%;
+  top: -10%;
+  right: 0;
+}
+.sections__center .header__subtitle {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  right: 20%;
+  color: #020202;
+}
+.sections__center .paragraph {
+  width: 88%;
+  margin: 0 5%;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  text-align: left;
+}
+.sections__center .img {
+  width: 100%;
+  height: 40%;
+}
+.sections__right {
+  width: 80%;
+  height: 100%;
+  background-color: #99E0CC;
+  position: relative;
+  margin-left: 20%;
+}
+.sections__right .colors {
+  position: absolute;
+  object-fit: fill;
+  z-index: 30;
+  height: 20%;
+  width: 9%;
+  top: -14%;
+  right: 10%;
+}
+.sections__right .img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: absolute;
+}
+.sections__right .paragraph {
+  position: absolute;
+  z-index: 30;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+  color: #FDFDFD;
+}
+.sections__right .paragraph--top {
+  width: 90%;
+  top: 9%;
+  right: -35%;
+  letter-spacing: 1px;
+}
+.sections__right .paragraph--bottom {
+  font-size: 0.6rem;
+  width: 80%;
+  text-align: center;
+}
+.sections__right .aside {
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  z-index: 30;
+  background-color: #30A080;
+  border-radius: 50%;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sections__right .asterisk {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-size: 14rem;
+  font-weight: 900;
+  color: #FD054D;
+  z-index: 30;
+  bottom: -11.8vh;
+  left: -5vw;
+}
+.sections__right .barCode {
+  position: absolute;
+  width: 4%;
+  height: 20%;
+  bottom: 2%;
+  right: 0;
+}
+.sections__right .footer {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 0.8rem;
+  width: 30vh;
+  bottom: 15%;
+  left: 75%;
+}
+
+/*# sourceMappingURL=styles.css.map */
